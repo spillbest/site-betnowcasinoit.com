@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BetNow Italia: com&#x27;era il sito e cosa fare adesso</title>
+<meta name="description" content="BetNow non è più disponibile per i giocatori italiani: licenza, bonus e struttura del sito com&#x27;erano, e dove si gioca oggi in euro.">
+<link rel="canonical" href="https://betnowcasinoit.com/">
+<link rel="alternate" hreflang="it-it" href="https://betnowcasinoit.com/">
+<link rel="alternate" hreflang="x-default" href="https://betnowcasinoit.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --org:#f86400; --org-d:#d95700; --grn:#2f9e4f; --grn-d:#268442;
+  --dark:#22262b; --dark2:#1a1d21; --line:#3a3f46; --line-lt:#e3e3e3;
+  --ink:#212529; --mut:#8a919a;
+}
+body{font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#fff}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 16px}
+
+/* ---------- header ---------- */
+.hd{background:var(--dark);border-bottom:2px solid var(--org);position:sticky;top:0;z-index:50}
+.hd .wrap{display:flex;align-items:center;gap:18px;min-height:64px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.logo img{height:40px;width:auto}
+.nav{display:flex;gap:2px;margin:0 auto;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{color:#e8eaed;font:700 13px/1 inherit;letter-spacing:.4px;text-transform:uppercase;padding:12px 12px;
+  white-space:nowrap;border-bottom:2px solid transparent}
+.nav a:hover,.nav a.on{color:var(--org);border-bottom-color:var(--org)}
+.hd-btns{display:flex;gap:9px;margin-left:auto}
+.btn-login{border:1px solid #fff;color:#fff;border-radius:5px;padding:9px 20px;font-weight:700;font-size:13.5px}
+.btn-login:hover{background:rgba(255,255,255,.1)}
+.btn-join{background:var(--grn);color:#fff;border-radius:5px;padding:9px 24px;font-weight:800;font-size:13.5px}
+.btn-join:hover{background:var(--grn-d)}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:5px;padding:8px 10px;cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:#e8eaed;margin:4px 0}
+
+/* ---------- slider ---------- */
+.slider{position:relative;overflow:hidden;background:#000}
+.slides{display:flex;transition:transform .5s ease}
+.slides a{flex:0 0 100%}
+.slides img{width:100%;height:auto;aspect-ratio:1920/352;object-fit:cover}
+.dots{position:absolute;left:0;right:0;bottom:10px;display:flex;gap:7px;justify-content:center}
+.dots i{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.45);cursor:pointer}
+.dots i.on{background:var(--org)}
+.arw{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.4);color:#fff;border:0;
+  width:36px;height:56px;font-size:22px;cursor:pointer;z-index:2}
+.arw.l{left:0;border-radius:0 5px 5px 0}
+.arw.r{right:0;border-radius:5px 0 0 5px}
+
+/* ---------- feature strip ---------- */
+.feats{background:var(--dark2);color:#fff;border-bottom:2px solid var(--org)}
+.feats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding-top:16px;padding-bottom:16px}
+.feat{display:flex;align-items:center;gap:12px;padding:4px 8px}
+.feat+.feat{border-left:1px solid var(--line)}
+.feat svg{width:34px;height:34px;flex:none;fill:var(--org)}
+.feat b{display:block;font-size:14px;letter-spacing:.3px}
+.feat span{font-size:12px;color:#aab2bb}
+
+/* ---------- promo cards ---------- */
+.promos-sec{background:#f5f6f7;padding:26px 0 8px}
+.promos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.promo{background:#fff;border:1px solid var(--line-lt);border-radius:8px;padding:22px 18px;text-align:center;
+  box-shadow:0 3px 10px rgba(0,0,0,.06);transition:transform .15s,box-shadow .15s}
+.promo:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(0,0,0,.12)}
+.promo .row1{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.promo .pct{font-size:44px;font-weight:800;color:var(--org);line-height:1;font-family:Georgia,serif}
+.promo .ttl{background:var(--dark);color:#fff;font-size:12.5px;font-weight:700;letter-spacing:.6px;
+  padding:7px 12px;border-radius:4px;text-transform:uppercase}
+.promo p{font-size:13.5px;color:#444;margin-bottom:10px}
+.promo p code{background:#f2f2f2;border:1px solid #e0e0e0;border-radius:3px;padding:1px 7px;font-weight:700;color:var(--ink)}
+.promo .more{color:var(--org);font-weight:700;font-size:13px}
+.promo .more:hover{text-decoration:underline}
+.contact-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:18px 0 14px}
+.contact-c{background:#fff;border:1px solid var(--line-lt);border-radius:8px;padding:12px 22px;display:flex;
+  align-items:center;gap:12px;box-shadow:0 3px 10px rgba(0,0,0,.06);font-size:13.5px}
+.contact-c img{height:40px;width:auto}
+.contact-c b{display:block;font-size:14px}
+.contact-c span{color:var(--mut);font-size:12px}
+
+/* ---------- section shells ---------- */
+.sec{margin-top:22px}
+.sec-h{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 2px 12px}
+.sec-h h2{font-size:19px;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:10px}
+.sec-h h2::before{content:"";width:5px;height:22px;background:var(--org);border-radius:2px}
+.sec-h .all{color:var(--org);font-weight:700;font-size:13px;white-space:nowrap}
+.sec-h .all:hover{text-decoration:underline}
+
+/* sports rail */
+.sports{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.sports a{background:#fff;border:1px solid var(--line-lt);border-radius:10px;padding:14px;display:flex;
+  flex-direction:column;align-items:center;gap:10px;transition:transform .15s,box-shadow .15s,border-color .15s}
+.sports a:hover{transform:translateY(-3px);box-shadow:0 8px 18px rgba(0,0,0,.12);border-color:var(--org)}
+.sports img{width:100%;max-width:110px;height:auto;aspect-ratio:1}
+.sports b{font-size:13px;letter-spacing:.4px}
+
+/* games grid */
+.games{display:grid;grid-template-columns:repeat(6,1fr);gap:13px}
+.game{position:relative;display:block;border:1px solid var(--line-lt);border-radius:8px;overflow:hidden;background:#fff;
+  transition:transform .15s,box-shadow .15s}
+.game:hover{transform:translateY(-3px);box-shadow:0 10px 20px rgba(0,0,0,.16)}
+.game img{width:100%;height:auto;aspect-ratio:279/400;object-fit:cover}
+.game .ov{position:absolute;left:0;right:0;top:0;bottom:30px;background:rgba(26,29,33,.62);display:flex;
+  flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;transition:opacity .15s}
+.game:hover .ov{opacity:1}
+.game .ov span{background:var(--org);color:#fff;font-size:11.5px;font-weight:700;padding:7px 14px;border-radius:4px}
+.game .ov .dm{background:#fff;color:var(--ink)}
+.game .nm{display:block;padding:7px 8px;font-size:11px;font-weight:700;text-align:center;color:#333;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:#fff;position:relative;z-index:1}
+
+/* why banners */
+.ways{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.ways a{border-radius:10px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.10);transition:transform .15s}
+.ways a:hover{transform:translateY(-3px)}
+.ways img{width:100%;height:auto;aspect-ratio:420/400;object-fit:cover}
+
+/* betting lines */
+.lines{width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;border:1px solid var(--line-lt);border-radius:8px;overflow:hidden}
+.lines th{background:var(--dark);color:#fff;font-size:11px;text-transform:uppercase;letter-spacing:.5px;
+  padding:9px 12px;text-align:left}
+.lines td{padding:10px 12px;border-bottom:1px solid #eee;vertical-align:middle}
+.lines tr:last-child td{border-bottom:none}
+.lines .match{font-weight:700}
+.lines .lg{display:block;font-size:11px;color:var(--mut);font-weight:400;margin-top:2px}
+.odd{display:inline-flex;flex-direction:column;align-items:center;min-width:64px;border:1px solid var(--line-lt);
+  border-radius:5px;padding:6px 4px;background:#fafafa}
+.odd small{font-size:10px;color:var(--mut)}
+.odd b{font-size:14px;color:var(--org)}
+.odd:hover{background:var(--org);border-color:var(--org)}
+.odd:hover small,.odd:hover b{color:#fff}
+.note{font-size:11.5px;color:var(--mut);margin-top:9px}
+.tblwrap{overflow-x:auto}
+
+/* offer box (5.1) */
+.offer{display:flex;align-items:center;gap:18px;flex-wrap:wrap;background:var(--dark);border-radius:10px;
+  padding:20px 24px;margin-top:22px;color:#fff}
+.offer .lg{background:#0d0f12;border:1px solid #383d44;border-radius:6px;padding:8px 12px;flex:none}
+.offer .lg img{height:28px;width:auto;object-fit:contain;display:block}
+.offer .tx{flex:1;min-width:240px}
+.offer .st{display:inline-block;font-size:11px;font-weight:800;color:var(--org);text-transform:uppercase;letter-spacing:.6px}
+.offer .nm{font-size:19px;font-weight:800;margin:4px 0 2px}
+.offer .bn{font-size:13.5px;color:#cfd4da}
+.offer .bn b{color:#fff}
+.offer .fx{display:flex;gap:8px;flex-wrap:wrap;margin-top:9px}
+.offer .fx span{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);border-radius:20px;
+  padding:4px 11px;font-size:11.5px;color:#e6e6e6}
+.offer>a{background:var(--grn);color:#fff;border-radius:6px;padding:13px 28px;font-weight:800;font-size:14.5px;white-space:nowrap}
+.offer>a:hover{background:var(--grn-d)}
+
+/* seo */
+.seo{background:#fff;border:1px solid var(--line-lt);border-radius:8px;padding:26px 24px;margin-top:22px;font-size:15px}
+.seo h1{font-size:25px;line-height:1.25;margin-bottom:14px}
+.seo h2{font-size:19px;margin:26px 0 10px}
+.seo h3{font-size:16px;margin:18px 0 8px}
+.seo p{margin-bottom:12px}
+.seo ul,.seo ol{padding-left:24px;margin-bottom:12px}
+.seo li{margin-bottom:5px}
+.seo a{color:var(--org);text-decoration:underline}
+.seo table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px}
+.seo th{background:#f3f3f3;text-align:left;padding:9px 10px;border:1px solid var(--line-lt)}
+.seo td{padding:9px 10px;border:1px solid var(--line-lt)}
+.seo details{border:1px solid var(--line-lt);border-radius:6px;padding:11px 14px;margin-bottom:8px}
+.seo summary{font-weight:600;cursor:pointer}
+.seo details p{margin:9px 0 0}
+.ximg{display:block;width:100%;max-width:620px;height:auto;margin:22px auto;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.14)}
+.notice{background:#fff7f0;border:1px solid #f4cdb0;border-left:4px solid var(--org);border-radius:6px;
+  padding:14px 16px;margin-top:18px;font-size:13.5px;color:#4d3423}
+.notice b{color:var(--org-d)}
+
+/* gnav */
+.gnav{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:14px}
+.gcard{border:1px solid var(--line-lt);border-radius:8px;padding:15px 16px;display:block;background:#fff;
+  transition:border-color .15s,box-shadow .15s}
+.gcard:hover{border-color:var(--org);box-shadow:0 6px 14px rgba(0,0,0,.08)}
+.gcard b{display:block;font-size:14.5px;margin-bottom:4px;color:var(--org-d)}
+.gcard span{font-size:12.5px;color:#555}
+
+/* cta box */
+.cta-box{background:var(--dark);color:#fff;border-radius:8px;padding:20px 22px;margin:22px 0;display:flex;
+  align-items:center;gap:18px;flex-wrap:wrap}
+.cta-box p{margin:0;font-size:14px;color:#cfd4da;flex:1;min-width:220px}
+.cta-box b{color:#fff;display:block;font-size:17px;margin-bottom:4px}
+.cta-box a{background:var(--org);color:#fff;border-radius:5px;padding:12px 26px;font-weight:700;white-space:nowrap}
+.cta-box a:hover{background:var(--org-d)}
+
+/* footer */
+.ft{background:var(--dark2);color:#9aa1a9;margin-top:26px;padding:30px 0 24px;font-size:12.5px}
+.ft-cols{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-bottom:22px}
+.ft h4{color:#fff;font-size:12.5px;text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px}
+.ft ul{list-style:none}
+.ft li{margin-bottom:6px}
+.ft a:hover{color:#fff}
+.ft-bot{border-top:1px solid #33383f;padding-top:16px;display:flex;gap:14px;align-items:flex-start;flex-wrap:wrap}
+.age{border:2px solid var(--org);color:var(--org);border-radius:50%;width:38px;height:38px;display:flex;
+  align-items:center;justify-content:center;font-weight:800;font-size:13px;flex:none}
+.ft-bot p{flex:1;min-width:260px;line-height:1.5}
+
+/* sticky (5.2) */
+.stky{position:fixed;left:50%;transform:translate(-50%,120%);bottom:16px;width:min(560px,calc(100% - 32px));
+  background:var(--dark);border:1px solid #3a4048;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.35);
+  display:flex;align-items:center;gap:12px;padding:10px 13px;z-index:60;transition:transform .25s ease;color:#fff}
+.stky.show{transform:translate(-50%,0)}
+.stky img{height:24px;width:auto;object-fit:contain;background:#0d0f12;border-radius:5px;padding:4px 6px;flex:none}
+.stky .t{flex:1;min-width:0;font-size:13px;line-height:1.3}
+.stky .t b{display:block;font-size:13.5px}
+.stky .t span{color:#aab2bb;font-size:11.5px}
+.stky a{background:var(--grn);color:#fff;border-radius:6px;padding:10px 18px;font-weight:800;font-size:13px;white-space:nowrap}
+
+@media(max-width:1000px){
+  .feats .wrap{grid-template-columns:repeat(2,1fr)}
+  .feat+.feat{border-left:none}
+  .promos{grid-template-columns:1fr}
+  .sports{grid-template-columns:repeat(3,1fr)}
+  .games{grid-template-columns:repeat(4,1fr)}
+  .ways{grid-template-columns:repeat(3,1fr)}
+  .gnav{grid-template-columns:repeat(2,1fr)}
+  .ft-cols{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:760px){
+  .hd .wrap{min-height:56px}
+  .logo img{height:32px}
+  .burger{display:block;margin-left:auto}
+  .nav{display:none;order:3;width:100%;flex-direction:column}
+  .nav.open{display:flex}
+  .nav a{border-bottom:1px solid var(--line)}
+  .hd-btns{margin-left:0}
+  .btn-login{padding:8px 14px}
+  .btn-join{padding:8px 16px}
+  .slides img{aspect-ratio:768/352;min-height:150px}
+  .arw{display:none}
+  .seo{padding:20px 16px}
+  .seo h1{font-size:21px}
+  .offer{padding:16px}
+  .offer>a{width:100%;text-align:center}
+}
+@media(max-width:640px){
+  .stky{left:0;transform:translate(0,120%);bottom:0;width:100%;border-radius:12px 12px 0 0;border-left:none;border-right:none;border-bottom:none}
+  .stky.show{transform:translate(0,0)}
+  .stky .t span{display:none}
+}
+@media(max-width:560px){
+  .games{grid-template-columns:repeat(3,1fr)}
+  .sports{grid-template-columns:repeat(3,1fr)}
+  .ways{grid-template-columns:1fr}
+  .gnav{grid-template-columns:1fr}
+  .feats .wrap{grid-template-columns:1fr}
+}
+</style>
+<style>
+.subTop{background:var(--dark);color:#fff;padding:24px 0;border-bottom:2px solid var(--org)}
+.subTop .crumb{font-size:12px;color:#aab2bb;margin-bottom:7px}
+.subTop .crumb a{color:#fff;text-decoration:underline}
+.subTop h1{font-size:27px;line-height:1.2}
+.page{max-width:920px;margin:0 auto;padding:0 16px}
+.page-body{background:#fff;border:1px solid var(--line-lt);border-radius:8px;padding:26px 26px 22px;margin-top:16px}
+.page-body h2{font-size:20px;margin:26px 0 10px}
+.page-body h2:first-child{margin-top:0}
+.page-body h3{font-size:16.5px;margin:18px 0 8px}
+.page-body p{margin-bottom:12px}
+.page-body ul,.page-body ol{padding-left:24px;margin-bottom:12px}
+.page-body li{margin-bottom:5px}
+.page-body a{color:var(--org-d);text-decoration:underline}
+.page-body code{background:#f2f2f2;border:1px solid #e0e0e0;border-radius:3px;padding:1px 7px;font-weight:700}
+.page-body table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px}
+.page-body th{background:var(--dark);color:#fff;text-align:left;padding:9px 10px;border:1px solid var(--dark)}
+.page-body td{padding:9px 10px;border:1px solid var(--line-lt)}
+.page-body details{border:1px solid var(--line-lt);border-radius:6px;padding:11px 14px;margin-bottom:8px}
+.page-body summary{font-weight:600;cursor:pointer}
+.page-body details p{margin:9px 0 0}
+.page-body blockquote.note{background:#fff7f0;border-left:4px solid var(--org);border-radius:5px;padding:13px 16px;margin:16px 0}
+.page-body blockquote.note p:last-child{margin-bottom:0}
+/* кнопки внутри статьи не наследуют стиль текстовой ссылки */
+.page-body .cta-box a,.page-body .ctamini a,.page-body .bigbonus a,.page-body .mocklogin a{text-decoration:none;color:#fff}
+.page-body .btnrow a,.page-body .lines2 a{text-decoration:none}
+.page-body .btnrow a{color:#333}
+.page-body .btnrow a:hover{color:#fff}
+.page-body .lines2 a{color:inherit}
+.page-body .mgrid a{text-decoration:none}
+.clusterFoot{display:flex;gap:9px 18px;flex-wrap:wrap;padding:16px 0 6px;margin-top:18px;border-top:1px solid var(--line-lt)}
+.clusterFoot a{color:var(--org-d);font-weight:700;font-size:13px}
+/* ── тематические блоки ── */
+.bigbonus{display:flex;flex-wrap:wrap;align-items:center;gap:20px;background:linear-gradient(115deg,var(--dark2),#5c2a00 55%,var(--org));
+  border-radius:10px;padding:24px 26px;color:#fff;margin:20px 0}
+.bigbonus .v{font-size:42px;font-weight:900;line-height:1}
+.bigbonus .v small{display:block;font-size:13px;font-weight:700;opacity:.88;margin-top:5px}
+.bigbonus .d{flex:1;min-width:210px;font-size:13.5px;opacity:.95}
+.bigbonus a{background:#fff;color:#1a1d21;border-radius:5px;padding:12px 24px;font-weight:800;font-size:14px;white-space:nowrap}
+.page-body .bigbonus a{color:#1a1d21}
+.btnrow{display:flex;gap:9px;flex-wrap:wrap;margin:16px 0}
+.btnrow a{background:#fff;border:1px solid var(--line-lt);border-radius:20px;padding:8px 16px;font-size:13px;font-weight:700}
+.btnrow a:hover{background:var(--org);border-color:var(--org)}
+.ctamini{display:flex;align-items:center;gap:14px;flex-wrap:wrap;background:#fff7f0;border:1px solid #f4cdb0;
+  border-left:4px solid var(--org);border-radius:6px;padding:13px 16px;margin:18px 0;font-size:13.5px}
+.ctamini b{flex:1;min-width:200px}
+.ctamini a{background:var(--org);color:#fff;border-radius:5px;padding:9px 18px;font-weight:700;font-size:13px}
+.ctamini a:hover{background:var(--org-d)}
+.mgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:18px 0}
+.mgrid .g{position:relative;display:block;border:1px solid var(--line-lt);border-radius:7px;overflow:hidden;
+  background:#fff;transition:transform .15s,box-shadow .15s}
+.mgrid .g:hover{transform:translateY(-3px);box-shadow:0 8px 18px rgba(0,0,0,.15)}
+.mgrid img{width:100%;height:auto;aspect-ratio:279/400;object-fit:cover}
+.mgrid .n{display:block;padding:6px 7px;font-size:10.5px;font-weight:700;text-align:center;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#222;background:#fff;position:relative;z-index:1}
+.mgrid .ov{position:absolute;left:0;right:0;top:0;bottom:28px;background:rgba(26,29,33,.6);display:flex;
+  align-items:center;justify-content:center;gap:7px;opacity:0;transition:opacity .15s}
+.mgrid .g:hover .ov{opacity:1}
+.mgrid .ov span{background:var(--org);color:#fff;font-size:11px;font-weight:700;padding:6px 11px;border-radius:4px}
+.mgrid .ov .dm{background:#fff;color:#222}
+.lines2{width:100%;border-collapse:collapse;font-size:13.5px;margin:18px 0}
+.lines2 th{background:var(--dark);color:#fff;font-size:11px;text-transform:uppercase;letter-spacing:.4px;padding:8px 10px;text-align:left}
+.lines2 td{padding:9px 10px;border-bottom:1px solid #eee}
+.lines2 .m{font-weight:600}
+.lines2 .lg{display:block;font-size:11px;color:var(--mut);font-weight:400;margin-top:2px}
+.lines2 .o{display:inline-flex;flex-direction:column;align-items:center;min-width:58px;border:1px solid var(--line-lt);
+  border-radius:4px;padding:5px 4px;background:#fafafa}
+.lines2 .o small{font-size:10px;color:var(--mut)}
+.lines2 .o b{font-size:13.5px;color:var(--org)}
+.lines2 .o:hover{background:var(--org);border-color:var(--org)}
+.lines2 .o:hover small,.lines2 .o:hover b{color:#fff}
+.mocklogin{position:relative;max-width:400px;margin:20px 0;border:1px solid var(--line-lt);border-radius:10px;padding:22px;background:#fff;box-shadow:0 4px 14px rgba(0,0,0,.07)}
+.mocklogin label{display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.3px;color:var(--mut);margin-bottom:5px}
+.mocklogin input{width:100%;border:1px solid var(--line-lt);border-radius:5px;padding:10px 12px;margin-bottom:12px;background:#f6f6f6;pointer-events:none}
+.mocklogin .sub{display:block;text-align:center;background:var(--grn);color:#fff;border-radius:5px;padding:11px;font-weight:800}
+.mocklogin .ovl{position:absolute;inset:0;background:rgba(255,255,255,.94);border-radius:10px;display:flex;
+  flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:20px}
+.mocklogin .ovl b{color:#c8102e;font-size:14.5px}
+.mocklogin .ovl span{font-size:12.5px;color:#555}
+.mocklogin .ovl a{background:var(--org);color:#fff;border-radius:5px;padding:10px 20px;font-weight:700;font-size:13px}
+.stores{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0}
+.store{flex:1;min-width:210px;background:#fafafa;border:1px dashed #cfcfcf;border-radius:7px;padding:13px 15px;
+  display:flex;align-items:center;gap:9px;font-size:13px;color:#555}
+.store .x{color:#c8102e;font-weight:900}.store .v{color:var(--grn);font-weight:900}
+.kvrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+.kv{background:#fafafa;border:1px solid var(--line-lt);border-radius:8px;padding:14px 16px;text-align:center}
+.kv .n{font-size:26px;font-weight:900;color:var(--org);line-height:1.1}
+.kv .t{font-size:12px;color:#555;margin-top:5px}
+.ratebox{display:flex;gap:22px;flex-wrap:wrap;align-items:center;background:#fafafa;border:1px solid var(--line-lt);
+  border-radius:10px;padding:20px 22px;margin:20px 0}
+.ratebox .big{text-align:center;min-width:120px}
+.ratebox .big .n{font-size:44px;font-weight:900;color:var(--org);line-height:1}
+.ratebox .big .st{color:#e8a300;font-size:17px;letter-spacing:2px}
+.ratebox .big .c{font-size:11.5px;color:var(--mut);margin-top:4px}
+.ratebox .bars{flex:1;min-width:240px;display:flex;flex-direction:column;gap:7px}
+.bar{display:flex;align-items:center;gap:10px;font-size:12.5px}
+.bar span{width:150px;color:#555}
+.bar i{flex:1;height:7px;background:#e6e6e6;border-radius:4px;overflow:hidden;display:block}
+.bar i b{display:block;height:100%;background:var(--org)}
+.bar u{width:28px;text-align:right;text-decoration:none;font-weight:700;color:#333}
+.revs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:18px 0}
+.rev{border:1px solid var(--line-lt);border-radius:7px;padding:13px 15px;background:#fff}
+.rev .rt{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:5px}
+.rev .nm{font-weight:700;font-size:13.5px}
+.rev .st{color:#e8a300;font-size:12.5px;letter-spacing:1px}
+.rev p{font-size:13px;color:#555;margin:0}
+.rev .meta{font-size:11px;color:#999;margin-top:6px}
+.revmore{text-align:center;margin:10px 0 4px}
+.revmore summary{display:inline-block;background:#fff;border:1px solid var(--line-lt);border-radius:20px;padding:9px 20px;
+  font-weight:700;font-size:13px;cursor:pointer;color:#333;list-style:none}
+@media(max-width:920px){.mgrid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:700px){.revs{grid-template-columns:1fr}.bigbonus .v{font-size:33px}.bar span{width:100px}.kvrow{grid-template-columns:1fr}}
+@media(max-width:560px){.mgrid{grid-template-columns:repeat(3,1fr)}.page-body{padding:20px 16px}.subTop h1{font-size:21px}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://betnowcasinoit.com/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Che licenza ha BetNow?", "acceptedAnswer": {"@type": "Answer", "text": "Una licenza offshore: le recensioni di settore più dettagliate indicano le Isole Comore, altre fonti parlano genericamente di giurisdizione offshore citando Curaçao. Tra i concessionari .it non figura."}}, {"@type": "Question", "name": "Qual è il deposito minimo per un bonus?", "acceptedAnswer": {"@type": "Answer", "text": "$20, con qualsiasi codice, da WELCOME25 a PROMOBUCK2. Il tetto massimo del bonus va da $2.000 con CASH100 a $2.500 con tutti gli altri."}}, {"@type": "Question", "name": "Posso prelevare senza completare il rollover?", "acceptedAnswer": {"@type": "Answer", "text": "Solo se non hai attivato nessun bonus: in quel caso il cash out è libero e i tempi restano quelli, da 24 ore a 5 giorni. Con un bonus in corso, prima si chiude il requisito di puntata."}}, {"@type": "Question", "name": "Che differenza c&#x27;è tra cash bonus e Promo Bucks?", "acceptedAnswer": {"@type": "Answer", "text": "Il cash bonus si somma al saldo reale e si sblocca col rollover, 5x sui codici WELCOME. I Promo Bucks sono fondi promozionali che spendi solo sullo sportsbook, rollover 10x o 12x e regole proprie spiegate nella FAQ dedicata."}}, {"@type": "Question", "name": "Esiste un&#x27;app BetNow per iOS o Android?", "acceptedAnswer": {"@type": "Answer", "text": "No, negli store non c&#x27;è nulla. Si gioca dal browser, e la versione mobile ha tutto: live betting, parlay, cassa."}}, {"@type": "Question", "name": "Quali documenti servono per la verifica?", "acceptedAnswer": {"@type": "Answer", "text": "Documento d&#x27;identità o passaporto, prova di residenza degli ultimi 3 mesi, foto della carta usata per depositare. Chiudere il KYC subito dopo il primo deposito accorcia l&#x27;attesa del primo prelievo."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "BetNow — guida italiana", "url": "https://betnowcasinoit.com/", "inLanguage": "it-IT"}</script>
+</head>
+<body>
+
+<header class="hd">
+  <div class="wrap">
+    <a class="logo" href="/"><img src="/assets/bn-logo.svg" alt="BetNow" width="165" height="40"></a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a class="on" href="/">Home</a>
+      <a href="/scommesse/">Sportsbook</a>
+      <a href="/scommesse/">Live Betting</a>
+      <a href="/casino/">Casino</a>
+      <a href="/casino/">Live Casino</a>
+      <a href="/scommesse/">Racebook</a>
+      <a href="/bonus/">Promotions</a>
+      <a href="/recensioni/">Recensioni</a>
+    </nav>
+    <div class="hd-btns">
+      <a class="btn-login" href="/accesso/">Login</a>
+      <a class="btn-join" href="/referral-link">Join</a>
+    </div>
+  </div>
+</header>
+
+<div class="slider" id="slider">
+  <div class="slides" id="slides">
+    <a href="/referral-link">
+      <picture>
+        <source media="(max-width: 768px)" srcset="/assets/slider/bn-mlb-season-2026-mobile.webp">
+        <img src="/assets/slider/bn-mlb-season-2026.webp" width="1920" height="352" alt="MLB Season — bonus 125%" fetchpriority="high">
+      </picture>
+    </a>
+    <a href="/referral-link">
+      <picture>
+        <source media="(max-width: 768px)" srcset="/assets/slider/bn-live-casino-mobile.webp">
+        <img src="/assets/slider/bn-live-casino.webp" width="1920" height="352" alt="Live Casino — bonus 200%" loading="lazy">
+      </picture>
+    </a>
+    <a href="/referral-link">
+      <picture>
+        <source media="(max-width: 768px)" srcset="/assets/slider/Horse-Racing-10-rebate-2025-mobile.webp">
+        <img src="/assets/slider/Horse-Racing-10-rebate-2025.webp" width="1920" height="352" alt="Racebook — rebate 10%" loading="lazy">
+      </picture>
+    </a>
+  </div>
+  <button class="arw l" id="prev" aria-label="Precedente">‹</button>
+  <button class="arw r" id="next" aria-label="Successivo">›</button>
+  <div class="dots" id="dots"></div>
+</div>
+
+<div class="feats">
+  <div class="wrap">
+    <div class="feat">
+      <svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.3l-4.8 2.6.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+      <div><b>Rebate settimanali</b><span>2% sport · 10% casinò · 10% ippica</span></div>
+    </div>
+    <div class="feat">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2zm0 4v2h16v-2z"/></svg>
+      <div><b>Zero commissioni</b><span>Nessuna fee sui depositi</span></div>
+    </div>
+    <div class="feat">
+      <svg viewBox="0 0 24 24"><path d="M13 2L4 14h6l-1 8 9-12h-6z"/></svg>
+      <div><b>Pagamenti rapidi</b><span>Prelievi disponibili 24/7</span></div>
+    </div>
+    <div class="feat">
+      <svg viewBox="0 0 24 24"><path d="M9 11a4 4 0 100-8 4 4 0 000 8zm6 1a3 3 0 100-6 3 3 0 000 6zM2 20c0-3.3 3.1-6 7-6s7 2.7 7 6v1H2zm15.5 1v-1c0-1.7-.7-3.2-1.9-4.4 3 .3 5.4 2.6 5.4 5.4z"/></svg>
+      <div><b>Buddy referral</b><span>Invita un amico, ricevi un bonus</span></div>
+    </div>
+  </div>
+</div>
+
+<section class="promos-sec">
+  <div class="wrap">
+    <div class="promos">
+      <div class="promo">
+        <div class="row1"><span class="pct">100%</span><span class="ttl">Cash Bonus</span></div>
+        <p>Seleziona il codice <code>CASH100</code> quando effettui il deposito.</p>
+        <a class="more" href="/bonus/">Più info »</a>
+      </div>
+      <div class="promo">
+        <div class="row1"><span class="pct">125%</span><span class="ttl">Crypto Special</span></div>
+        <p>Seleziona il codice <code>PROMOBUCK2</code> quando depositi in crypto.</p>
+        <a class="more" href="/bonus/">Più info »</a>
+      </div>
+      <div class="promo">
+        <div class="row1"><span class="pct">200%</span><span class="ttl">Casino Bonus</span></div>
+        <p>Seleziona il codice <code>CASINO200</code> quando effettui il deposito.</p>
+        <a class="more" href="/bonus/">Più info »</a>
+      </div>
+    </div>
+    <div class="contact-row">
+      <a class="contact-c" href="/referral-link"><img src="/assets/icons/cs.svg" alt="Telefono" width="40" height="44">
+        <span><b>1-888-WINNER4</b><span>linea per i nuovi conti</span></span></a>
+      <a class="contact-c" href="/referral-link"><img src="/assets/icons/chat.svg" alt="Chat" width="40" height="44">
+        <span><b>Chat 24/7</b><span>assistenza in tempo reale</span></span></a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+
+  <div class="notice">
+    <b>Stato per l'Italia:</b> BetNow non è più disponibile per i giocatori italiani — nessuna versione
+    italiana, accesso bloccato dal nostro Paese. Quello che vedi qui sotto descrive l'offerta com'era;
+    per giocare oggi serve una piattaforma attiva in euro.
+    <a href="/recensioni/" style="color:var(--org-d);text-decoration:underline">Leggi la scheda completa</a>.
+  </div>
+
+  <section class="sec">
+    <div class="sec-h"><h2>Sports Lines</h2><a class="all" href="/scommesse/">Vedi tutto »</a></div>
+    <div class="sports">
+      <a href="/referral-link"><img src="/assets/sports/mlb.svg" alt="MLB" width="110" height="110" loading="lazy"><b>MLB</b></a>
+      <a href="/referral-link"><img src="/assets/sports/nba.svg" alt="NBA" width="110" height="110" loading="lazy"><b>NBA</b></a>
+      <a href="/referral-link"><img src="/assets/sports/nfl.svg" alt="NFL" width="110" height="110" loading="lazy"><b>NFL</b></a>
+      <a href="/referral-link"><img src="/assets/sports/ncaa.svg" alt="NCAA" width="110" height="110" loading="lazy"><b>NCAA</b></a>
+      <a href="/referral-link"><img src="/assets/sports/nhl.svg" alt="NHL" width="110" height="110" loading="lazy"><b>NHL</b></a>
+      <a href="/referral-link"><img src="/assets/sports/ufc.svg" alt="UFC" width="110" height="110" loading="lazy"><b>UFC</b></a>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-h"><h2>Prossimi eventi</h2><a class="all" href="/scommesse/">Tutte le linee »</a></div>
+    <div class="tblwrap">
+      <table class="lines">
+        <thead><tr><th>Incontro</th><th>1</th><th>X</th><th>2</th></tr></thead>
+        <tbody id="lines"></tbody>
+      </table>
+    </div>
+    <p class="note">Quote indicative a scopo illustrativo: possono variare presso l'operatore.</p>
+  </section>
+
+  <section class="sec">
+    <div class="sec-h"><h2>Casino Games</h2><a class="all" href="/casino/">Tutti i giochi »</a></div>
+    <div class="games" id="games"></div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-h"><h2>Why BetNow</h2><a class="all" href="/bonus/">Tutte le promo »</a></div>
+    <div class="ways">
+      <a href="/referral-link"><img src="/assets/ways/bn-sportsbook-rebate.webp" alt="Sportsbook Rebate" width="420" height="400" loading="lazy"></a>
+      <a href="/referral-link"><img src="/assets/ways/sports-contests.webp" alt="Sports Contests" width="420" height="400" loading="lazy"></a>
+      <a href="/referral-link"><img src="/assets/ways/buddy-referral-program.webp" alt="Buddy Referral" width="420" height="400" loading="lazy"></a>
+    </div>
+  </section>
+
+  <div class="offer">
+    <span class="lg"><img src="/assets/n1bet-logo.svg" alt="N1 Bet" width="90" height="28"></span>
+    <div class="tx">
+      <span class="st">Piattaforma consigliata per chi arrivava da BetNow</span>
+      <div class="nm">N1 Bet · sport e casinò</div>
+      <div class="bn">Benvenuto fino a <b>5.000€ + 200 giri gratis</b> · conto in euro senza cambio valuta ·
+        palinsesto calcio con live e cash out · registrazione e cassa funzionanti oggi</div>
+      <div class="fx"><span>★ 4.6/5 redazione</span><span>Conto in 3 minuti</span><span>Deposito da 10€</span></div>
+    </div>
+    <a href="/referral-link?sub_id_1=N1">Gioca ora →</a>
+  </div>
+
+  <section class="sec">
+    <div class="sec-h"><h2>Guida BetNow</h2></div>
+    <div class="gnav">
+      <a class="gcard" href="/scommesse/"><b>Scommesse sportive</b><span>Sportsbook USA, live betting, racebook e rebate del 2%.</span></a>
+      <a class="gcard" href="/casino/"><b>Casinò e giochi</b><span>Slot, tavoli, video poker e live casino della piattaforma.</span></a>
+      <a class="gcard" href="/bonus/"><b>Bonus e codici</b><span>CASH100, PROMOBUCK2, CASINO200: come funzionano davvero.</span></a>
+      <a class="gcard" href="/accesso/"><b>Login e registrazione</b><span>Accesso al conto, requisiti e cosa serve dall'Italia.</span></a>
+      <a class="gcard" href="/app/"><b>App e mobile</b><span>Sito mobile, app Android e come si gioca da smartphone.</span></a>
+      <a class="gcard" href="/recensioni/"><b>Recensioni</b><span>Affidabilità, pagamenti, licenza e valutazione completa.</span></a>
+    </div>
+  </section>
+
+  <article class="seo" id="seo">
+<h1>BetNow Italia: guida al sito ufficiale, bonus e scommesse</h1>
+<p><strong>BetNow non è più disponibile per i giocatori italiani</strong>: il servizio non accetta registrazioni dall&#x27;Italia e non ha mai avuto una versione italiana. Quella che leggi è la scheda del bookmaker com&#x27;era — utile per capire cosa cercavi e cosa può sostituirlo. Per giocare oggi in euro, la piattaforma consigliata è in cima alla pagina.</p>
+<p>BetNow gira dal 2016. Sotto lo stesso tetto ci sono scommesse sportive, live betting, casinò, racebook per l&#x27;ippica e una poker room multiplayer. Sulla licenza le fonti non vanno d&#x27;accordo: le recensioni di settore più dettagliate parlano di Isole Comore, altre si fermano a un generico &quot;offshore&quot; e tirano in mezzo Curaçao. Il pubblico a cui guarda l&#x27;operatore è nordamericano, e si capisce da due cose: conti in dollari USA, interfaccia solo in inglese. L&#x27;accesso avviene da web e browser mobile, con il pulsante di login nella barra superiore del sito.</p>
+<p>Una precisazione utile prima di partire: questa guida riguarda lo sportsbook con sezione casinò attivo dal 2016, non altre piattaforme dal nome simile.</p>
+<h2>Betnow Italia: cos&#x27;è e come funziona il sito ufficiale</h2>
+<p>L&#x27;operatore lavora con licenza offshore e non figura tra i concessionari ADM: sul piano pratico questo significa saldo in USD, termini e condizioni in inglese, controversie gestite dal regolamento interno dell&#x27;operatore, prelievi che seguono canali e tempi diversi da quelli di un bookmaker con concessione italiana. Anche il trattamento fiscale delle vincite non segue le regole dei siti .it.</p>
+<p>L&#x27;impianto del sito è quello degli sportsbook americani: menu sport sulla sinistra, ticket di giocata sulla destra, e dalla barra in alto si salta a casinò, racebook e poker. Nessuna app. Né su App Store né su Google Play: si gioca da browser, il sito è responsive e sul telefono regge senza compromessi visibili.</p>
+<p>Il grosso dell&#x27;attenzione va a NFL, NBA e MLB, ma nel palinsesto trovi anche calcio europeo — Serie A e Champions comprese — tennis, hockey e sport da combattimento. Quote in formato americano come impostazione di partenza (in decimale ci passi dalle impostazioni), saldi in dollari, codici bonus da digitare a mano al momento del deposito: sono questi i tre scarti che noti subito arrivando dai concessionari nostrani.</p>
+<h2>Registrazione e verifica dell&#x27;account BetNow</h2>
+<p>Aprire il conto era questione di minuti. La verifica dei documenti chiede più pazienza.</p>
+<ol><li>Dal sito si passava da &quot;Join Now&quot; o &quot;Sign Up&quot; nella barra superiore.</li><li>Nome e cognome, email, numero di telefono, data di nascita. L&#x27;età minima è 18 anni in Italia, mentre alcune giurisdizioni la alzano a 21.</li><li>Scegli la valuta del conto: il riferimento operativo è il dollaro USA.</li><li>Confermi con il link che arriva via email o con il codice via SMS.</li><li>Primo deposito, minimo $20 se vuoi attivare un bonus, e il codice promozionale va inserito prima di confermare il pagamento.</li><li>Il KYC te lo chiedono di solito quando arriva la prima richiesta di prelievo.</li></ol>
+<p>Per l&#x27;identità servono tre cose: carta d&#x27;identità o passaporto, una prova di residenza recente — bolletta o estratto conto degli ultimi 3 mesi — e, se hai depositato con carta, una foto della carta usata per il deposito. Carica tutto appena finito il primo deposito. Farlo a prelievo già richiesto significa solo aspettare i soldi più a lungo. L&#x27;Help Center ha FAQ apposite sia sulla verifica del conto sia sul reset della password dimenticata, con recupero via email.</p>
+<h2>Bonus, promozioni e requisiti di rollover</h2>
+<p>Il welcome sbandierato è &quot;fino al 125%&quot;, dietro ci sono sei codici promozionali diversi. Ne usi uno per deposito, e la scelta pesa parecchio: cambia il tipo di fondi che ti ritrovi sul conto e cambia il volume di gioco da smaltire.</p>
+<div class="tblwrap"><table><thead><tr><th>Codice</th><th>Bonus</th><th>Rollover</th><th>Deposito min.</th><th>Bonus max</th></tr></thead><tbody><tr><td>WELCOME25</td><td>25% cash bonus</td><td>5x</td><td>$20</td><td>$2.500</td></tr><tr><td>WELCOME30 (solo crypto)</td><td>30% cash bonus</td><td>5x</td><td>$20</td><td>$2.500</td></tr><tr><td>CASH100 (1° deposito)</td><td>100% cash bonus</td><td>25x su sportsbook, racebook e casinò</td><td>$20</td><td>$2.000</td></tr><tr><td>CASINO200</td><td>200% in casino chips</td><td>25x</td><td>$20</td><td>$2.500</td></tr><tr><td>PROMOBUCKS</td><td>100% in Promo Bucks sportsbook</td><td>10x</td><td>$20</td><td>$2.500</td></tr><tr><td>PROMOBUCK2 (solo crypto)</td><td>125% in Promo Bucks sportsbook</td><td>12x</td><td>$20</td><td>$2.500</td></tr></tbody></table></div>
+<p>I tre formati non si equivalgono. Il cash bonus finisce sul saldo reale e lo sblocchi con il rollover. Le casino chips le spendi soltanto nella sezione giochi. I Promo Bucks sono fondi promozionali riservati allo sportsbook, con una FAQ dedicata che spiega cosa succede quando la giocata vince e cosa quando va in fumo.</p>
+<p>Il conto lo fa l&#x27;operatore stesso nel suo esempio: depositi $1.000, il bonus è $250, il saldo diventa $1.250. Requisito: ($1.000 + $250) × 5 = $6.250 di volume da giocare prima di toccare il cash out. Il rollover si calcola su deposito più bonus, e qui si sbaglia spesso pensando che riguardi solo la parte regalata. Con CASH100 e il suo 25x, lo stesso deposito ti mette addosso un requisito venticinque volte più pesante in proporzione: ha senso se macini volumi alti spalmati tra sport, ippica e casinò, altrimenti è una gabbia.</p>
+<p>Depositare senza codice resta un&#x27;opzione: zero bonus, zero rollover, cash out libero. Tra le promozioni a tempo l&#x27;Help Center cita iniziative come la &quot;BetNow $150.000 Ultimate World Cup Challenge&quot;, agganciata ai grandi eventi calcistici.</p>
+<h2>Depositi e prelievi: metodi, limiti e tempi</h2>
+<p>Da FAQ e recensioni risultano Visa, Mastercard, Bitcoin, Ethereum, Litecoin e voucher crypto; in uscita si aggiungono bonifico e assegno. Le crypto sono il canale che l&#x27;operatore coccola davvero, tanto da riservargli due codici con percentuale maggiorata, WELCOME30 e PROMOBUCK2.</p>
+<div class="tblwrap"><table><thead><tr><th>Metodo</th><th>Direzione</th><th>Importi</th><th>Commissioni</th><th>Tempi</th></tr></thead><tbody><tr><td>Visa / Mastercard</td><td>Deposito</td><td>min. $20 per attivare un bonus, resto da verificare in cassa</td><td>secondo il metodo scelto</td><td>accredito immediato o quasi</td></tr><tr><td>Bitcoin, Ethereum, Litecoin, voucher crypto</td><td>Deposito e prelievo</td><td>da verificare in cassa</td><td>secondo il metodo scelto</td><td>lato veloce della forbice 24 ore – 5 giorni</td></tr><tr><td>Bonifico / assegno</td><td>Prelievo</td><td>da verificare in cassa</td><td>secondo il metodo scelto</td><td>lato lento, fino a 5 giorni</td></tr></tbody></table></div>
+<p>Massimali per transazione ed eventuali commissioni dipendono dal metodo e dal profilo del conto: apri la cassa prima di muovere i soldi, i limiti e le fee compaiono nella schermata di pagamento con l&#x27;importo aggiornato. Se la carta viene rifiutata — capita alle carte italiane sui circuiti internazionali di gaming — le FAQ consigliano di riprovare con un importo diverso, sentire la banca o passare a crypto, che il problema lo taglia alla radice.</p>
+<p>Sui prelievi la forbice dichiarata va da 24 ore a 5 giorni: crypto sul lato veloce, assegni e bonifici a chiudere la fila. Un KYC incompleto aggiunge giorni. Con un bonus attivo il prelievo resta bloccato finché il rollover non è chiuso, e per questo il codice al deposito va scelto con il calcolo già fatto.</p>
+<h2>Sport e mercati disponibili su BetNow</h2>
+<p>Il palinsesto ha un&#x27;anima americana e non lo nasconde. NFL, NBA, MLB e NHL sono scavate a fondo: spread, moneyline, totali, player props, futures sul vincitore di division e di campionato, same game parlay, quote live per ogni partita. Su una gara NFL trovi lo spread Chiefs -3.5, la moneyline Bills +155, la prop sulle yard lanciate dal quarterback con over/under 275.5 — esempi che il sito stesso usa per spiegarsi.</p>
+<p>Il calcio c&#x27;è. Serie A, Champions, Mondiali, i campionati europei che contano, con i mercati fondamentali: 1X2 tradotto in moneyline a tre esiti, handicap, over/under gol. Tennis, UFC/MMA, boxe, sport virtuali, eSports e il racebook completano il quadro, con le puntate tipiche delle corse e limiti a parte.</p>
+<p>Puntata minima e massima cambiano da sport a sport e da mercato a mercato. Una tabella unica non esiste: l&#x27;operatore sparpaglia i wagering limits nelle FAQ della sezione Sports Betting.</p>
+<h2>Tipi di scommessa: spread, moneyline, over/under, prop e parlay</h2>
+<p>Le quote americane al primo colpo spiazzano, poi la logica si rivela banale. Una moneyline negativa dice quanto devi puntare per vincere $100: a -200 metti $200 per portarne a casa 100 di profitto. Una positiva dice quanto profitto fanno $100 giocati: a +150 ne vinci 150. Il passaggio tra formato americano, decimale e frazionario è un click nelle impostazioni.</p>
+<p>Lo spread è l&#x27;handicap. Chiefs -3.5 vuol dire che i Chiefs devono vincere con almeno 4 punti di scarto perché la giocata paghi; chi sta sull&#x27;altro lato a +3.5 tiene anche con una sconfitta di 3 o meno. Su entrambi i lati la quota standard è -110, e quel -10 è il vig, il margine che si tiene il banco.</p>
+<p>Gli over/under lavorano sul totale punti combinato delle due squadre. Le prop stringono su un evento singolo: yard di un quarterback, punti di un cestista, primo marcatore. I futures guardano avanti di mesi — vincente Super Bowl, scudetto, Slam. I parlay sono la bolletta multipla, quote che si moltiplicano fra loro, e con il same game parlay puoi incrociare mercati della stessa partita costruendo tutto dal ticket.</p>
+<h2>Scommesse live e mobile: come piazzare una giocata</h2>
+<p>Il live è la parte migliore della piattaforma: quote in-game che si muovono in tempo reale su NFL, NBA, calcio e tennis, spread e totali ricalcolati a ogni canestro o touchdown. La sequenza non cambia tra desktop e telefono: apri la sezione Live, scegli l&#x27;evento, clicchi la quota, scrivi l&#x27;importo nel ticket, confermi. Se la quota si è mossa tra la selezione e la conferma, il sistema te lo dice.</p>
+<p>Da mobile si passa dal browser, il sito replica tutto — parlay, cassa, live. Con una connessione ballerina conveniva confermare solo a quota verificata: negli ultimi quarti NBA e sui drive decisivi della NFL i numeri cambiano in un attimo.</p>
+<h2>Casinò e sezione giochi</h2>
+<p>Accanto allo sportsbook ci sono slot, blackjack, roulette, video poker e tavoli con dealer dal vivo. Sul primo deposito le recensioni riportano un bonus casinò del 100% fino a $2.000; sui codici e sul deposito minimo di quella promo conviene guardare la pagina promozioni in quel momento, perché in tabella l&#x27;offerta dedicata al casinò è CASINO200, con il 200% in casino chips e rollover 25x.</p>
+<p>Poi c&#x27;è la tabella di contribuzione al rollover per gioco, quella che quasi nessuno apre. Le slot contribuiscono in genere al 100%, blackjack, roulette e video poker molto meno o nulla. Chi prende CASINO200 convinto di smaltirlo al blackjack rischia di macinare mani per ore senza scalfire il requisito di una virgola. Sull&#x27;RTP i valori indicativi di categoria dicono 92-97% per le slot, con blackjack e video poker più su a strategia corretta, ma il numero vero è scritto nella scheda del singolo titolo.</p>
+<p>Il regolamento della sezione copre anche i casi antipatici: round interrotto da una disconnessione — l&#x27;esito viene ripristinato o la puntata restituita, dipende dalla policy del gioco — e puntate dichiarate non valide. La poker room multiplayer vive separata dal casinò.</p>
+<h2>Assistenza clienti</h2>
+<p>Tre canali: live chat, email, telefono. Tutto in inglese, un servizio in italiano non risulta. Per le questioni ordinarie l&#x27;Help Center è più rapido di qualsiasi operatore: sette categorie, da Bonuses and Promotions a Account, Deposits, Payouts, Sports Betting, Casino e Racebook. Carta rifiutata, documenti per il KYC, tempi di payout senza bonus, limiti di puntata e di deposito: le risposte sono lì e spesso ti risparmiano la chat. Sui tempi di risposta le recensioni divergono, ma su una cosa concordano — la chat corre, l&#x27;email dorme.</p>
+<h2>Domande frequenti su BetNow</h2>
+<details><summary>Che licenza ha BetNow?</summary><p>Una licenza offshore: le recensioni di settore più dettagliate indicano le Isole Comore, altre fonti parlano genericamente di giurisdizione offshore citando Curaçao. Tra i concessionari .it non figura.</p></details>
+<details><summary>Qual è il deposito minimo per un bonus?</summary><p>$20, con qualsiasi codice, da WELCOME25 a PROMOBUCK2. Il tetto massimo del bonus va da $2.000 con CASH100 a $2.500 con tutti gli altri.</p></details>
+<details><summary>Posso prelevare senza completare il rollover?</summary><p>Solo se non hai attivato nessun bonus: in quel caso il cash out è libero e i tempi restano quelli, da 24 ore a 5 giorni. Con un bonus in corso, prima si chiude il requisito di puntata.</p></details>
+<details><summary>Che differenza c&#x27;è tra cash bonus e Promo Bucks?</summary><p>Il cash bonus si somma al saldo reale e si sblocca col rollover, 5x sui codici WELCOME. I Promo Bucks sono fondi promozionali che spendi solo sullo sportsbook, rollover 10x o 12x e regole proprie spiegate nella FAQ dedicata.</p></details>
+<details><summary>Esiste un&#x27;app BetNow per iOS o Android?</summary><p>No, negli store non c&#x27;è nulla. Si gioca dal browser, e la versione mobile ha tutto: live betting, parlay, cassa.</p></details>
+<details><summary>Quali documenti servono per la verifica?</summary><p>Documento d&#x27;identità o passaporto, prova di residenza degli ultimi 3 mesi, foto della carta usata per depositare. Chiudere il KYC subito dopo il primo deposito accorcia l&#x27;attesa del primo prelievo.</p></details>
+</article>
+</div>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-cols">
+      <div>
+        <h4>Gioco</h4>
+        <ul>
+          <li><a href="/scommesse/">Sportsbook</a></li>
+          <li><a href="/casino/">Casinò</a></li>
+          <li><a href="/bonus/">Promozioni</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Conto</h4>
+        <ul>
+          <li><a href="/accesso/">Login e registrazione</a></li>
+          <li><a href="/app/">App e mobile</a></li>
+          <li><a href="/recensioni/">Recensioni</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Assistenza</h4>
+        <ul>
+          <li>Tel. 1-888-WINNER4</li>
+          <li>Chat 24/7 sul sito dell'operatore</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Gioco responsabile</h4>
+        <ul>
+          <li><a href="https://www.begambleaware.org/" rel="nofollow noopener" target="_blank">BeGambleAware</a></li>
+          <li><a href="https://www.iss.it/telefono-verde-per-le-problematiche-legate-al-gioco-d-azzardo" rel="nofollow noopener" target="_blank">Telefono Verde 800 558822</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <div class="age">18+</div>
+      <p>Il gioco è vietato ai minori di 18 anni e può causare dipendenza patologica. Gioca responsabilmente.
+      BetNow è un operatore internazionale senza concessione ADM: giocare su siti non autorizzati in Italia
+      comporta rischi e tutele ridotte. Questo sito è una risorsa informativa indipendente e non è il portale
+      ufficiale dell'operatore. Quote e importi mostrati sono indicativi.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="stky" id="stky"><img src="/assets/n1bet-logo.svg" alt="N1 Bet">
+<div class="t"><b>N1 Bet · conto in euro</b><span>5.000€ + 200 giri gratis · score 4.6</span></div>
+<a href="/referral-link?sub_id_1=N1">Gioca ora →</a></div>
+
+<script>
+var GAMES=[
+ {f:"5-rng-reels-and-wheels-xl.webp",n:"Reels And Wheels XL"},
+ {f:"5-rng-hooked-on-fishing.webp",n:"Hooked On Fishing"},
+ {f:"5-rng-10-times-vegas.webp",n:"10 Times Vegas"},
+ {f:"6-rng-j-crossfire-chicken-x5000.webp",n:"CrossFire Chicken x5000"},
+ {f:"6-rng-j-lucky-chicken-cross.webp",n:"Lucky Chicken Cross"},
+ {f:"4-rng-dice.webp",n:"Dice"},
+ {f:"4-rng-mines.webp",n:"Mines"},
+ {f:"5-rng-crystals-on-fire.webp",n:"Crystals on Fire"},
+ {f:"5-rng-3-heads-of-fortune.webp",n:"3 Heads of Fortune"},
+ {f:"6-rng-b-3-pots-of-lunar-wolf.webp",n:"3 Pots of Lunar Wolf"},
+ {f:"6-rng-b-the-tipsy-tourist-beach-bonanza.webp",n:"The Tipsy Tourist"},
+ {f:"5-rng-river-of-gold.webp",n:"River of Gold"},
+ {f:"6-rng-b-a-big-catch.webp",n:"A Big Catch"},
+ {f:"3-rng-aztec-sun.webp",n:"Aztec Sun"},
+ {f:"5-rng-coins-of-poseidon.webp",n:"Coins of Poseidon"},
+ {f:"5-rng-golden-buffalo.webp",n:"Golden Buffalo"},
+ {f:"3-rng-craps.webp",n:"Craps"},
+ {f:"5-rng-15-coin-bank-bust.webp",n:"15 Coin Bank Bust"},
+ {f:"5-rng-bank-shot.webp",n:"Bank Shot"},
+ {f:"5-rng-fishing-fortune.webp",n:"Fishing Fortune"},
+ {f:"1-p-jacksorbetter.webp",n:"Jacks or Better"},
+ {f:"5-rng-pinnata-party.webp",n:"Piñata Party"},
+ {f:"5-rng-cai-fu-dai-panda.webp",n:"Cai Fu Dai Panda"},
+ {f:"5-rng-3-pots-of-coins.webp",n:"3 Pots of Coins"}
+];
+document.getElementById("games").innerHTML=GAMES.map(function(g){
+ return '<a class="game" href="/referral-link">'+
+ '<img src="/assets/games/'+g.f+'" alt="'+g.n+'" width="279" height="400" loading="lazy">'+
+ '<span class="ov"><span>Gioca</span><span class="dm">Demo</span></span>'+
+ '<span class="nm">'+g.n+'</span></a>';
+}).join("");
+
+var LINES=[
+ {h:"Yankees — Red Sox",l:"MLB · stanotte",o:[1.83,null,2.02]},
+ {h:"Dodgers — Giants",l:"MLB · stanotte",o:[1.68,null,2.25]},
+ {h:"Inter — Milan",l:"Serie A · 23 ago",o:[2.05,3.40,3.55]},
+ {h:"Juventus — Napoli",l:"Serie A · 23 ago",o:[2.35,3.25,3.10]},
+ {h:"Lakers — Warriors",l:"NBA preseason · ott",o:[1.90,null,1.95]}
+];
+document.getElementById("lines").innerHTML=LINES.map(function(m){
+ var cells=["1","X","2"].map(function(k,i){
+  if(m.o[i]===null)return '<td>—</td>';
+  return '<td><a class="odd" href="/referral-link"><small>'+k+'</small><b>'+m.o[i].toFixed(2)+'</b></a></td>';
+ }).join("");
+ return '<tr><td class="match">'+m.h+'<span class="lg">'+m.l+'</span></td>'+cells+'</tr>';
+}).join("");
+
+(function(){
+ var s=document.getElementById("slides"),d=document.getElementById("dots"),i=0,n=s.children.length,t;
+ for(var k=0;k<n;k++)d.innerHTML+='<i'+(k?'':' class="on"')+'></i>';
+ function go(x){i=(x+n)%n;s.style.transform="translateX("+(-i*100)+"%)";
+  [].forEach.call(d.children,function(e,j){e.className=j===i?"on":"";});}
+ [].forEach.call(d.children,function(e,j){e.onclick=function(){go(j);reset();};});
+ document.getElementById("prev").onclick=function(){go(i-1);reset();};
+ document.getElementById("next").onclick=function(){go(i+1);reset();};
+ function reset(){clearInterval(t);t=setInterval(function(){go(i+1);},6000);}
+ reset();
+})();
+
+document.getElementById("burger").onclick=function(){
+ document.getElementById("nav").classList.toggle("open");
+};
+(function(){var e=document.getElementById("stky");
+addEventListener("scroll",function(){e.classList.toggle("show",scrollY>320)},{passive:true})})();
+</script>
+</body>
+</html>
