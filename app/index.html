@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BetNow App: mai esistita e sito mobile irraggiungibile</title>
+<meta name="description" content="Nessuna app BetNow negli store e sito mobile non più raggiungibile dall&#x27;Italia: gli APK da evitare e le app delle alternative.">
+<link rel="canonical" href="https://betnowcasinoit.com/app/">
+<link rel="alternate" hreflang="it-it" href="https://betnowcasinoit.com/app/">
+<link rel="alternate" hreflang="x-default" href="https://betnowcasinoit.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --org:#f86400; --org-d:#d95700; --grn:#2f9e4f; --grn-d:#268442;
+  --dark:#22262b; --dark2:#1a1d21; --line:#3a3f46; --line-lt:#e3e3e3;
+  --ink:#212529; --mut:#8a919a;
+}
+body{font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#fff}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 16px}
+
+/* ---------- header ---------- */
+.hd{background:var(--dark);border-bottom:2px solid var(--org);position:sticky;top:0;z-index:50}
+.hd .wrap{display:flex;align-items:center;gap:18px;min-height:64px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.logo img{height:40px;width:auto}
+.nav{display:flex;gap:2px;margin:0 auto;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{color:#e8eaed;font:700 13px/1 inherit;letter-spacing:.4px;text-transform:uppercase;padding:12px 12px;
+  white-space:nowrap;border-bottom:2px solid transparent}
+.nav a:hover,.nav a.on{color:var(--org);border-bottom-color:var(--org)}
+.hd-btns{display:flex;gap:9px;margin-left:auto}
+.btn-login{border:1px solid #fff;color:#fff;border-radius:5px;padding:9px 20px;font-weight:700;font-size:13.5px}
+.btn-login:hover{background:rgba(255,255,255,.1)}
+.btn-join{background:var(--grn);color:#fff;border-radius:5px;padding:9px 24px;font-weight:800;font-size:13.5px}
+.btn-join:hover{background:var(--grn-d)}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:5px;padding:8px 10px;cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:#e8eaed;margin:4px 0}
+
+/* ---------- slider ---------- */
+.slider{position:relative;overflow:hidden;background:#000}
+.slides{display:flex;transition:transform .5s ease}
+.slides a{flex:0 0 100%}
+.slides img{width:100%;height:auto;aspect-ratio:1920/352;object-fit:cover}
+.dots{position:absolute;left:0;right:0;bottom:10px;display:flex;gap:7px;justify-content:center}
+.dots i{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.45);cursor:pointer}
+.dots i.on{background:var(--org)}
+.arw{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.4);color:#fff;border:0;
+  width:36px;height:56px;font-size:22px;cursor:pointer;z-index:2}
+.arw.l{left:0;border-radius:0 5px 5px 0}
+.arw.r{right:0;border-radius:5px 0 0 5px}
+
+/* ---------- feature strip ---------- */
+.feats{background:var(--dark2);color:#fff;border-bottom:2px solid var(--org)}
+.feats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding-top:16px;padding-bottom:16px}
+.feat{display:flex;align-items:center;gap:12px;padding:4px 8px}
+.feat+.feat{border-left:1px solid var(--line)}
+.feat svg{width:34px;height:34px;flex:none;fill:var(--org)}
+.feat b{display:block;font-size:14px;letter-spacing:.3px}
+.feat span{font-size:12px;color:#aab2bb}
+
+/* ---------- promo cards ---------- */
+.promos-sec{background:#f5f6f7;padding:26px 0 8px}
+.promos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.promo{background:#fff;border:1px solid var(--line-lt);border-radius:8px;padding:22px 18px;text-align:center;
+  box-shadow:0 3px 10px rgba(0,0,0,.06);transition:transform .15s,box-shadow .15s}
+.promo:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(0,0,0,.12)}
+.promo .row1{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.promo .pct{font-size:44px;font-weight:800;color:var(--org);line-height:1;font-family:Georgia,serif}
+.promo .ttl{background:var(--dark);color:#fff;font-size:12.5px;font-weight:700;letter-spacing:.6px;
+  padding:7px 12px;border-radius:4px;text-transform:uppercase}
+.promo p{font-size:13.5px;color:#444;margin-bottom:10px}
+.promo p code{background:#f2f2f2;border:1px solid #e0e0e0;border-radius:3px;padding:1px 7px;font-weight:700;color:var(--ink)}
+.promo .more{color:var(--org);font-weight:700;font-size:13px}
+.promo .more:hover{text-decoration:underline}
+.contact-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:18px 0 14px}
+.contact-c{background:#fff;border:1px solid var(--line-lt);border-radius:8px;padding:12px 22px;display:flex;
+  align-items:center;gap:12px;box-shadow:0 3px 10px rgba(0,0,0,.06);font-size:13.5px}
+.contact-c img{height:40px;width:auto}
+.contact-c b{display:block;font-size:14px}
+.contact-c span{color:var(--mut);font-size:12px}
+
+/* ---------- section shells ---------- */
+.sec{margin-top:22px}
+.sec-h{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 2px 12px}
+.sec-h h2{font-size:19px;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:10px}
+.sec-h h2::before{content:"";width:5px;height:22px;background:var(--org);border-radius:2px}
+.sec-h .all{color:var(--org);font-weight:700;font-size:13px;white-space:nowrap}
+.sec-h .all:hover{text-decoration:underline}
+
+/* sports rail */
+.sports{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.sports a{background:#fff;border:1px solid var(--line-lt);border-radius:10px;padding:14px;display:flex;
+  flex-direction:column;align-items:center;gap:10px;transition:transform .15s,box-shadow .15s,border-color .15s}
+.sports a:hover{transform:translateY(-3px);box-shadow:0 8px 18px rgba(0,0,0,.12);border-color:var(--org)}
+.sports img{width:100%;max-width:110px;height:auto;aspect-ratio:1}
+.sports b{font-size:13px;letter-spacing:.4px}
+
+/* games grid */
+.games{display:grid;grid-template-columns:repeat(6,1fr);gap:13px}
+.game{position:relative;display:block;border:1px solid var(--line-lt);border-radius:8px;overflow:hidden;background:#fff;
+  transition:transform .15s,box-shadow .15s}
+.game:hover{transform:translateY(-3px);box-shadow:0 10px 20px rgba(0,0,0,.16)}
+.game img{width:100%;height:auto;aspect-ratio:279/400;object-fit:cover}
+.game .ov{position:absolute;left:0;right:0;top:0;bottom:30px;background:rgba(26,29,33,.62);display:flex;
+  flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;transition:opacity .15s}
+.game:hover .ov{opacity:1}
+.game .ov span{background:var(--org);color:#fff;font-size:11.5px;font-weight:700;padding:7px 14px;border-radius:4px}
+.game .ov .dm{background:#fff;color:var(--ink)}
+.game .nm{display:block;padding:7px 8px;font-size:11px;font-weight:700;text-align:center;color:#333;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:#fff;position:relative;z-index:1}
+
+/* why banners */
+.ways{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.ways a{border-radius:10px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.10);transition:transform .15s}
+.ways a:hover{transform:translateY(-3px)}
+.ways img{width:100%;height:auto;aspect-ratio:420/400;object-fit:cover}
+
+/* betting lines */
+.lines{width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;border:1px solid var(--line-lt);border-radius:8px;overflow:hidden}
+.lines th{background:var(--dark);color:#fff;font-size:11px;text-transform:uppercase;letter-spacing:.5px;
+  padding:9px 12px;text-align:left}
+.lines td{padding:10px 12px;border-bottom:1px solid #eee;vertical-align:middle}
+.lines tr:last-child td{border-bottom:none}
+.lines .match{font-weight:700}
+.lines .lg{display:block;font-size:11px;color:var(--mut);font-weight:400;margin-top:2px}
+.odd{display:inline-flex;flex-direction:column;align-items:center;min-width:64px;border:1px solid var(--line-lt);
+  border-radius:5px;padding:6px 4px;background:#fafafa}
+.odd small{font-size:10px;color:var(--mut)}
+.odd b{font-size:14px;color:var(--org)}
+.odd:hover{background:var(--org);border-color:var(--org)}
+.odd:hover small,.odd:hover b{color:#fff}
+.note{font-size:11.5px;color:var(--mut);margin-top:9px}
+.tblwrap{overflow-x:auto}
+
+/* offer box (5.1) */
+.offer{display:flex;align-items:center;gap:18px;flex-wrap:wrap;background:var(--dark);border-radius:10px;
+  padding:20px 24px;margin-top:22px;color:#fff}
+.offer .lg{background:#0d0f12;border:1px solid #383d44;border-radius:6px;padding:8px 12px;flex:none}
+.offer .lg img{height:28px;width:auto;object-fit:contain;display:block}
+.offer .tx{flex:1;min-width:240px}
+.offer .st{display:inline-block;font-size:11px;font-weight:800;color:var(--org);text-transform:uppercase;letter-spacing:.6px}
+.offer .nm{font-size:19px;font-weight:800;margin:4px 0 2px}
+.offer .bn{font-size:13.5px;color:#cfd4da}
+.offer .bn b{color:#fff}
+.offer .fx{display:flex;gap:8px;flex-wrap:wrap;margin-top:9px}
+.offer .fx span{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);border-radius:20px;
+  padding:4px 11px;font-size:11.5px;color:#e6e6e6}
+.offer>a{background:var(--grn);color:#fff;border-radius:6px;padding:13px 28px;font-weight:800;font-size:14.5px;white-space:nowrap}
+.offer>a:hover{background:var(--grn-d)}
+
+/* seo */
+.seo{background:#fff;border:1px solid var(--line-lt);border-radius:8px;padding:26px 24px;margin-top:22px;font-size:15px}
+.seo h1{font-size:25px;line-height:1.25;margin-bottom:14px}
+.seo h2{font-size:19px;margin:26px 0 10px}
+.seo h3{font-size:16px;margin:18px 0 8px}
+.seo p{margin-bottom:12px}
+.seo ul,.seo ol{padding-left:24px;margin-bottom:12px}
+.seo li{margin-bottom:5px}
+.seo a{color:var(--org);text-decoration:underline}
+.seo table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px}
+.seo th{background:#f3f3f3;text-align:left;padding:9px 10px;border:1px solid var(--line-lt)}
+.seo td{padding:9px 10px;border:1px solid var(--line-lt)}
+.seo details{border:1px solid var(--line-lt);border-radius:6px;padding:11px 14px;margin-bottom:8px}
+.seo summary{font-weight:600;cursor:pointer}
+.seo details p{margin:9px 0 0}
+.ximg{display:block;width:100%;max-width:620px;height:auto;margin:22px auto;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.14)}
+.notice{background:#fff7f0;border:1px solid #f4cdb0;border-left:4px solid var(--org);border-radius:6px;
+  padding:14px 16px;margin-top:18px;font-size:13.5px;color:#4d3423}
+.notice b{color:var(--org-d)}
+
+/* gnav */
+.gnav{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:14px}
+.gcard{border:1px solid var(--line-lt);border-radius:8px;padding:15px 16px;display:block;background:#fff;
+  transition:border-color .15s,box-shadow .15s}
+.gcard:hover{border-color:var(--org);box-shadow:0 6px 14px rgba(0,0,0,.08)}
+.gcard b{display:block;font-size:14.5px;margin-bottom:4px;color:var(--org-d)}
+.gcard span{font-size:12.5px;color:#555}
+
+/* cta box */
+.cta-box{background:var(--dark);color:#fff;border-radius:8px;padding:20px 22px;margin:22px 0;display:flex;
+  align-items:center;gap:18px;flex-wrap:wrap}
+.cta-box p{margin:0;font-size:14px;color:#cfd4da;flex:1;min-width:220px}
+.cta-box b{color:#fff;display:block;font-size:17px;margin-bottom:4px}
+.cta-box a{background:var(--org);color:#fff;border-radius:5px;padding:12px 26px;font-weight:700;white-space:nowrap}
+.cta-box a:hover{background:var(--org-d)}
+
+/* footer */
+.ft{background:var(--dark2);color:#9aa1a9;margin-top:26px;padding:30px 0 24px;font-size:12.5px}
+.ft-cols{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-bottom:22px}
+.ft h4{color:#fff;font-size:12.5px;text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px}
+.ft ul{list-style:none}
+.ft li{margin-bottom:6px}
+.ft a:hover{color:#fff}
+.ft-bot{border-top:1px solid #33383f;padding-top:16px;display:flex;gap:14px;align-items:flex-start;flex-wrap:wrap}
+.age{border:2px solid var(--org);color:var(--org);border-radius:50%;width:38px;height:38px;display:flex;
+  align-items:center;justify-content:center;font-weight:800;font-size:13px;flex:none}
+.ft-bot p{flex:1;min-width:260px;line-height:1.5}
+
+/* sticky (5.2) */
+.stky{position:fixed;left:50%;transform:translate(-50%,120%);bottom:16px;width:min(560px,calc(100% - 32px));
+  background:var(--dark);border:1px solid #3a4048;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.35);
+  display:flex;align-items:center;gap:12px;padding:10px 13px;z-index:60;transition:transform .25s ease;color:#fff}
+.stky.show{transform:translate(-50%,0)}
+.stky img{height:24px;width:auto;object-fit:contain;background:#0d0f12;border-radius:5px;padding:4px 6px;flex:none}
+.stky .t{flex:1;min-width:0;font-size:13px;line-height:1.3}
+.stky .t b{display:block;font-size:13.5px}
+.stky .t span{color:#aab2bb;font-size:11.5px}
+.stky a{background:var(--grn);color:#fff;border-radius:6px;padding:10px 18px;font-weight:800;font-size:13px;white-space:nowrap}
+
+@media(max-width:1000px){
+  .feats .wrap{grid-template-columns:repeat(2,1fr)}
+  .feat+.feat{border-left:none}
+  .promos{grid-template-columns:1fr}
+  .sports{grid-template-columns:repeat(3,1fr)}
+  .games{grid-template-columns:repeat(4,1fr)}
+  .ways{grid-template-columns:repeat(3,1fr)}
+  .gnav{grid-template-columns:repeat(2,1fr)}
+  .ft-cols{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:760px){
+  .hd .wrap{min-height:56px}
+  .logo img{height:32px}
+  .burger{display:block;margin-left:auto}
+  .nav{display:none;order:3;width:100%;flex-direction:column}
+  .nav.open{display:flex}
+  .nav a{border-bottom:1px solid var(--line)}
+  .hd-btns{margin-left:0}
+  .btn-login{padding:8px 14px}
+  .btn-join{padding:8px 16px}
+  .slides img{aspect-ratio:768/352;min-height:150px}
+  .arw{display:none}
+  .seo{padding:20px 16px}
+  .seo h1{font-size:21px}
+  .offer{padding:16px}
+  .offer>a{width:100%;text-align:center}
+}
+@media(max-width:640px){
+  .stky{left:0;transform:translate(0,120%);bottom:0;width:100%;border-radius:12px 12px 0 0;border-left:none;border-right:none;border-bottom:none}
+  .stky.show{transform:translate(0,0)}
+  .stky .t span{display:none}
+}
+@media(max-width:560px){
+  .games{grid-template-columns:repeat(3,1fr)}
+  .sports{grid-template-columns:repeat(3,1fr)}
+  .ways{grid-template-columns:1fr}
+  .gnav{grid-template-columns:1fr}
+  .feats .wrap{grid-template-columns:1fr}
+}
+</style>
+<style>
+.subTop{background:var(--dark);color:#fff;padding:24px 0;border-bottom:2px solid var(--org)}
+.subTop .crumb{font-size:12px;color:#aab2bb;margin-bottom:7px}
+.subTop .crumb a{color:#fff;text-decoration:underline}
+.subTop h1{font-size:27px;line-height:1.2}
+.page{max-width:920px;margin:0 auto;padding:0 16px}
+.page-body{background:#fff;border:1px solid var(--line-lt);border-radius:8px;padding:26px 26px 22px;margin-top:16px}
+.page-body h2{font-size:20px;margin:26px 0 10px}
+.page-body h2:first-child{margin-top:0}
+.page-body h3{font-size:16.5px;margin:18px 0 8px}
+.page-body p{margin-bottom:12px}
+.page-body ul,.page-body ol{padding-left:24px;margin-bottom:12px}
+.page-body li{margin-bottom:5px}
+.page-body a{color:var(--org-d);text-decoration:underline}
+.page-body code{background:#f2f2f2;border:1px solid #e0e0e0;border-radius:3px;padding:1px 7px;font-weight:700}
+.page-body table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px}
+.page-body th{background:var(--dark);color:#fff;text-align:left;padding:9px 10px;border:1px solid var(--dark)}
+.page-body td{padding:9px 10px;border:1px solid var(--line-lt)}
+.page-body details{border:1px solid var(--line-lt);border-radius:6px;padding:11px 14px;margin-bottom:8px}
+.page-body summary{font-weight:600;cursor:pointer}
+.page-body details p{margin:9px 0 0}
+.page-body blockquote.note{background:#fff7f0;border-left:4px solid var(--org);border-radius:5px;padding:13px 16px;margin:16px 0}
+.page-body blockquote.note p:last-child{margin-bottom:0}
+/* кнопки внутри статьи не наследуют стиль текстовой ссылки */
+.page-body .cta-box a,.page-body .ctamini a,.page-body .bigbonus a,.page-body .mocklogin a{text-decoration:none;color:#fff}
+.page-body .btnrow a,.page-body .lines2 a{text-decoration:none}
+.page-body .btnrow a{color:#333}
+.page-body .btnrow a:hover{color:#fff}
+.page-body .lines2 a{color:inherit}
+.page-body .mgrid a{text-decoration:none}
+.clusterFoot{display:flex;gap:9px 18px;flex-wrap:wrap;padding:16px 0 6px;margin-top:18px;border-top:1px solid var(--line-lt)}
+.clusterFoot a{color:var(--org-d);font-weight:700;font-size:13px}
+/* ── тематические блоки ── */
+.bigbonus{display:flex;flex-wrap:wrap;align-items:center;gap:20px;background:linear-gradient(115deg,var(--dark2),#5c2a00 55%,var(--org));
+  border-radius:10px;padding:24px 26px;color:#fff;margin:20px 0}
+.bigbonus .v{font-size:42px;font-weight:900;line-height:1}
+.bigbonus .v small{display:block;font-size:13px;font-weight:700;opacity:.88;margin-top:5px}
+.bigbonus .d{flex:1;min-width:210px;font-size:13.5px;opacity:.95}
+.bigbonus a{background:#fff;color:#1a1d21;border-radius:5px;padding:12px 24px;font-weight:800;font-size:14px;white-space:nowrap}
+.page-body .bigbonus a{color:#1a1d21}
+.btnrow{display:flex;gap:9px;flex-wrap:wrap;margin:16px 0}
+.btnrow a{background:#fff;border:1px solid var(--line-lt);border-radius:20px;padding:8px 16px;font-size:13px;font-weight:700}
+.btnrow a:hover{background:var(--org);border-color:var(--org)}
+.ctamini{display:flex;align-items:center;gap:14px;flex-wrap:wrap;background:#fff7f0;border:1px solid #f4cdb0;
+  border-left:4px solid var(--org);border-radius:6px;padding:13px 16px;margin:18px 0;font-size:13.5px}
+.ctamini b{flex:1;min-width:200px}
+.ctamini a{background:var(--org);color:#fff;border-radius:5px;padding:9px 18px;font-weight:700;font-size:13px}
+.ctamini a:hover{background:var(--org-d)}
+.mgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:18px 0}
+.mgrid .g{position:relative;display:block;border:1px solid var(--line-lt);border-radius:7px;overflow:hidden;
+  background:#fff;transition:transform .15s,box-shadow .15s}
+.mgrid .g:hover{transform:translateY(-3px);box-shadow:0 8px 18px rgba(0,0,0,.15)}
+.mgrid img{width:100%;height:auto;aspect-ratio:279/400;object-fit:cover}
+.mgrid .n{display:block;padding:6px 7px;font-size:10.5px;font-weight:700;text-align:center;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#222;background:#fff;position:relative;z-index:1}
+.mgrid .ov{position:absolute;left:0;right:0;top:0;bottom:28px;background:rgba(26,29,33,.6);display:flex;
+  align-items:center;justify-content:center;gap:7px;opacity:0;transition:opacity .15s}
+.mgrid .g:hover .ov{opacity:1}
+.mgrid .ov span{background:var(--org);color:#fff;font-size:11px;font-weight:700;padding:6px 11px;border-radius:4px}
+.mgrid .ov .dm{background:#fff;color:#222}
+.lines2{width:100%;border-collapse:collapse;font-size:13.5px;margin:18px 0}
+.lines2 th{background:var(--dark);color:#fff;font-size:11px;text-transform:uppercase;letter-spacing:.4px;padding:8px 10px;text-align:left}
+.lines2 td{padding:9px 10px;border-bottom:1px solid #eee}
+.lines2 .m{font-weight:600}
+.lines2 .lg{display:block;font-size:11px;color:var(--mut);font-weight:400;margin-top:2px}
+.lines2 .o{display:inline-flex;flex-direction:column;align-items:center;min-width:58px;border:1px solid var(--line-lt);
+  border-radius:4px;padding:5px 4px;background:#fafafa}
+.lines2 .o small{font-size:10px;color:var(--mut)}
+.lines2 .o b{font-size:13.5px;color:var(--org)}
+.lines2 .o:hover{background:var(--org);border-color:var(--org)}
+.lines2 .o:hover small,.lines2 .o:hover b{color:#fff}
+.mocklogin{position:relative;max-width:400px;margin:20px 0;border:1px solid var(--line-lt);border-radius:10px;padding:22px;background:#fff;box-shadow:0 4px 14px rgba(0,0,0,.07)}
+.mocklogin label{display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.3px;color:var(--mut);margin-bottom:5px}
+.mocklogin input{width:100%;border:1px solid var(--line-lt);border-radius:5px;padding:10px 12px;margin-bottom:12px;background:#f6f6f6;pointer-events:none}
+.mocklogin .sub{display:block;text-align:center;background:var(--grn);color:#fff;border-radius:5px;padding:11px;font-weight:800}
+.mocklogin .ovl{position:absolute;inset:0;background:rgba(255,255,255,.94);border-radius:10px;display:flex;
+  flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:20px}
+.mocklogin .ovl b{color:#c8102e;font-size:14.5px}
+.mocklogin .ovl span{font-size:12.5px;color:#555}
+.mocklogin .ovl a{background:var(--org);color:#fff;border-radius:5px;padding:10px 20px;font-weight:700;font-size:13px}
+.stores{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0}
+.store{flex:1;min-width:210px;background:#fafafa;border:1px dashed #cfcfcf;border-radius:7px;padding:13px 15px;
+  display:flex;align-items:center;gap:9px;font-size:13px;color:#555}
+.store .x{color:#c8102e;font-weight:900}.store .v{color:var(--grn);font-weight:900}
+.kvrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+.kv{background:#fafafa;border:1px solid var(--line-lt);border-radius:8px;padding:14px 16px;text-align:center}
+.kv .n{font-size:26px;font-weight:900;color:var(--org);line-height:1.1}
+.kv .t{font-size:12px;color:#555;margin-top:5px}
+.ratebox{display:flex;gap:22px;flex-wrap:wrap;align-items:center;background:#fafafa;border:1px solid var(--line-lt);
+  border-radius:10px;padding:20px 22px;margin:20px 0}
+.ratebox .big{text-align:center;min-width:120px}
+.ratebox .big .n{font-size:44px;font-weight:900;color:var(--org);line-height:1}
+.ratebox .big .st{color:#e8a300;font-size:17px;letter-spacing:2px}
+.ratebox .big .c{font-size:11.5px;color:var(--mut);margin-top:4px}
+.ratebox .bars{flex:1;min-width:240px;display:flex;flex-direction:column;gap:7px}
+.bar{display:flex;align-items:center;gap:10px;font-size:12.5px}
+.bar span{width:150px;color:#555}
+.bar i{flex:1;height:7px;background:#e6e6e6;border-radius:4px;overflow:hidden;display:block}
+.bar i b{display:block;height:100%;background:var(--org)}
+.bar u{width:28px;text-align:right;text-decoration:none;font-weight:700;color:#333}
+.revs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:18px 0}
+.rev{border:1px solid var(--line-lt);border-radius:7px;padding:13px 15px;background:#fff}
+.rev .rt{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:5px}
+.rev .nm{font-weight:700;font-size:13.5px}
+.rev .st{color:#e8a300;font-size:12.5px;letter-spacing:1px}
+.rev p{font-size:13px;color:#555;margin:0}
+.rev .meta{font-size:11px;color:#999;margin-top:6px}
+.revmore{text-align:center;margin:10px 0 4px}
+.revmore summary{display:inline-block;background:#fff;border:1px solid var(--line-lt);border-radius:20px;padding:9px 20px;
+  font-weight:700;font-size:13px;cursor:pointer;color:#333;list-style:none}
+@media(max-width:920px){.mgrid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:700px){.revs{grid-template-columns:1fr}.bigbonus .v{font-size:33px}.bar span{width:100px}.kvrow{grid-template-columns:1fr}}
+@media(max-width:560px){.mgrid{grid-template-columns:repeat(3,1fr)}.page-body{padding:20px 16px}.subTop h1{font-size:21px}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://betnowcasinoit.com/"}, {"@type": "ListItem", "position": 2, "name": "BetNow App Mobile: download, accesso e come funziona su Android e iOS", "item": "https://betnowcasinoit.com/app/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Esiste un&#x27;app BetNow da scaricare su Google Play o App Store?", "acceptedAnswer": {"@type": "Answer", "text": "No. Da mobile si gioca dentro il browser, e la &quot;BET NOW – Watch Shows&quot; che vedi su Google Play è streaming televisivo, un altro mondo."}}, {"@type": "Question", "name": "Come aggiungo BetNow alla schermata Home?", "acceptedAnswer": {"@type": "Answer", "text": "Su Android da Chrome: menu ⋮ e poi &quot;Aggiungi a schermata Home&quot;. Su iPhone da Safari: Condividi, &quot;Aggiungi a Home&quot;. Tocchi l&#x27;icona e la piattaforma parte."}}, {"@type": "Question", "name": "I bonus da mobile sono diversi da quelli desktop?", "acceptedAnswer": {"@type": "Answer", "text": "Sono gli stessi: benvenuto sport e casinò, reload, rebate e referral valgono da qualsiasi schermo, con le condizioni indicate in pagina promozioni."}}, {"@type": "Question", "name": "Posso giocare a poker dall&#x27;app?", "acceptedAnswer": {"@type": "Answer", "text": "No, la poker room non c&#x27;è né su iOS né su Android. Restano slot, tavoli live, Craps, video poker e gli instant tipo Dice e Mines."}}, {"@type": "Question", "name": "Quanto ci mette un prelievo in Bitcoin?", "acceptedAnswer": {"@type": "Answer", "text": "Uno o due giorni secondo i tempi indicati dall&#x27;operatore. Bonifici e importi elevati si allungano, fino a sette giorni."}}, {"@type": "Question", "name": "Serve la verifica dei documenti?", "acceptedAnswer": {"@type": "Answer", "text": "Sì. Il KYC con documento d&#x27;identità arriva prima del primo prelievo e si chiude caricando le foto dallo smartphone."}}]}</script>
+</head>
+<body>
+<header class="hd">
+  <div class="wrap">
+    <a class="logo" href="/"><img src="/assets/bn-logo.svg" alt="BetNow" width="165" height="40"></a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="/">Home</a>
+      <a href="/scommesse/">Sportsbook</a>
+      <a href="/scommesse/">Live Betting</a>
+      <a href="/casino/">Casino</a>
+      <a href="/casino/">Live Casino</a>
+      <a href="/scommesse/">Racebook</a>
+      <a href="/bonus/">Promotions</a>
+      <a href="/recensioni/">Recensioni</a>
+    </nav>
+    <div class="hd-btns">
+      <a class="btn-login" href="/accesso/">Login</a>
+      <a class="btn-join" href="/referral-link">Join</a>
+    </div>
+  </div>
+</header>
+<div class="subTop">
+  <div class="page">
+    <div class="crumb"><a href="/">Home</a> / App</div>
+    <h1>BetNow App Mobile: download, accesso e come funziona su Android e iOS</h1>
+  </div>
+</div>
+<div class="page">
+  <div class="offer"><span class="lg"><img src="/assets/n1bet-logo.svg" alt="N1 Bet"></span><div class="tx"><span class="st">Alternativa europea per chi gioca dall'Italia</span><div class="nm">N1 Bet · sport e casinò</div><div class="bn">Benvenuto fino a <b>5.000€ + 200 giri gratis</b> · conto in euro senza cambio valuta · palinsesto calcio con live e cash out · registrazione e cassa funzionanti oggi</div><div class="fx"><span>★ 4.6/5 redazione</span><span>Conto in 3 minuti</span><span>Deposito da 10€</span></div></div><a href="/referral-link?sub_id_1=N1">Gioca ora →</a></div>
+  <article class="page-body">
+<p><strong>Dall&#x27;Italia BetNow non è più raggiungibile</strong>, né da desktop né da mobile. Questa scheda descrive com&#x27;era la versione mobile e spiega perché gli APK che circolano col nome del brand sono da evitare.</p>
+<p>Su Google Play e App Store la BetNow app non c&#x27;è. Non è un difetto della ricerca: da smartphone si gioca dentro il browser, con una web app HTML5 che ricalca il sito desktop pezzo per pezzo. Trenta secondi per piazzare l&#x27;icona sulla schermata Home e sei operativo: sport, live, casinò, racebook. Le differenze rispetto al computer sono minime, la cassa invece merita due parole in più.</p>
+
+<div class="stores"><div class="store"><span class="x">✕</span> App Store — nessuna app BetNow per l'Italia</div><div class="store"><span class="x">✕</span> Google Play — nessuna app ufficiale scaricabile</div><div class="store"><span class="v">✓</span> Sito mobile dal browser — con scorciatoia Home</div></div>
+<h2>BetNow App: cos&#x27;è e come funziona la versione mobile</h2>
+<p>Nessun APK, nessuna app iOS da scaricare. Apri betnow.eu dal browser del telefono e arrivi sulla versione responsive, che si porta dietro tutto il desktop: sportsbook, live betting, casinò con giochi animati, live casino con croupier in carne e ossa, racebook per l&#x27;ippica, promozioni. L&#x27;operatore lo riassume in tre parole sue: &quot;no app needed&quot;.</p>
+<p>Attivo dal 2016, con licenza offshore (Curaçao/Comore secondo le fonti dell&#x27;operatore). Nell&#x27;elenco dei concessionari ADM non figura, il conto è in dollari USA e a regolare il gioco sono i termini dell&#x27;operatore.</p>
+<p>La compatibilità dichiarata è larga: iOS, Android, Huawei, e nelle indicazioni dell&#x27;operatore compaiono anche Linux e BlackBerry. Serve un browser aggiornato e una linea che non balli. Il layout si adatta a smartphone e tablet, e girando il telefono in orizzontale la schermata live diventa un&#x27;altra cosa da leggere.</p>
+<p>Nella ricerca ci si perde facilmente. Su Google Play &quot;BET NOW – Watch Shows&quot; è l&#x27;app di streaming del canale televisivo americano BET, un prodotto diverso dal bookmaker. E poi c&#x27;è Betano, operatore a sé.</p>
+<div class="cta-box"><p><b>Cerchi conto in euro e sito in italiano?</b> App e web app ufficiali in italiano sugli operatori europei.</p><a href="/referral-link?sub_id_1=N1">Vai all&#x27;alternativa in euro</a></div><h2>Download BetNow App su Android e iOS</h2>
+<p>Il download, a essere precisi, è un collegamento sulla schermata Home che apre la piattaforma come farebbe un&#x27;app vera.</p>
+<p>Su Android, con Chrome:</p>
+<ol><li>Apri betnow.eu da Chrome</li><li>Menu ⋮ in alto a destra</li><li>&quot;Aggiungi a schermata Home&quot; — su certe versioni di Chrome la voce si chiama &quot;Installa app&quot;</li><li>Conferma il nome, tocca &quot;Aggiungi&quot;</li></ol>
+<p>Su iPhone e iPad, con Safari:</p>
+<ol><li>betnow.eu da Safari</li><li>Icona Condividi, il quadrato con la freccia</li><li>Scorri fino a &quot;Aggiungi a Home&quot;</li><li>&quot;Aggiungi&quot; in alto a destra, finito</li></ol>
+<p>Non occupa spazio perché non stai installando niente, e gli aggiornamenti li fa il server: la versione vecchia da aggiornare non esiste. Come base consigliata ci vogliono Android 8 o superiore, iOS 13 su iPhone, con Chrome o Safari recenti.</p>
+<p>I file &quot;betnow apk&quot; che girano sui siti di terze parti non arrivano dall&#x27;operatore e non sono firmati. Il canale è uno: il browser.</p>
+
+<div class="kvrow"><div class="kv"><div class="n">0</div><div class="t">app negli store IT</div></div><div class="kv"><div class="n">100%</div><div class="t">funzioni dal browser</div></div><div class="kv"><div class="n">24/7</div><div class="t">chat assistenza</div></div></div>
+<h2>Accesso e registrazione da mobile</h2>
+<p>Cinque campi e sei dentro: nome, email, telefono, valuta, password. Due o tre minuti, con approvazione del conto accelerata. Il metodo di pagamento resta in memoria, quindi la ricarica successiva è questione di un paio di tap.</p>
+<p>Si entra con email e password, e se la password sfugge si recupera dalla solita mail di reset. L&#x27;autenticazione a due fattori, quando è disponibile sul conto, la accendi dalle impostazioni. Età minima 18 anni, 21 in alcune giurisdizioni. Il KYC con documento d&#x27;identità l&#x27;operatore lo chiede prima del primo prelievo: andava caricato dal telefono subito dopo l&#x27;apertura del conto, così non ti tocca cercare la carta d&#x27;identità con l&#x27;incasso in sospeso.</p>
+<p>La valuta si scegle in fase di iscrizione, ma il conto lavora in dollari: quali dati di contatto e quali metodi di ricarica compaiano effettivamente a un profilo aperto dall&#x27;Italia è cosa da verificare in cassa dopo la registrazione.</p>
+<h2>Scommesse sportive da app: mercati e funzioni</h2>
+<p>Il palinsesto parla americano. NFL, NBA, MLB e NHL stanno in vetrina, ma calcio, tennis, boxe, UFC ed eSports ci sono tutti. Chi va a caccia di nicchia trova la BBL tedesca di basket, il baseball giapponese della NPB, la CPBL taiwanese, la KBO coreana, fino ai mercati novelty tipo il Nathan&#x27;s hot dog eating contest. Le corse dei cavalli hanno il loro racebook dedicato.</p>
+<p>Oltre a singole e multiple (parlay) trovi teaser, if-bet, futures e le prop, con la funzione &quot;build your prop&quot; per cucirti addosso la proposizione. Il giro da telefono è corto: cerchi l&#x27;evento nel menu degli sport, tocchi la quota, quella finisce nella schedina, scrivi l&#x27;importo e confermi. Le quote live si aggiornano in tempo reale, ed è qui che il telefono batte il computer: un&#x27;espulsione al 60° o un infortunio li vedi mentre sei sul divano e sistemi la bolletta prima che la linea si muova. Il formato delle quote si commuta tra americano e decimale, dettaglio tutt&#x27;altro che secondario se sei abituato all&#x27;1,85 e non al -118.</p>
+
+<div class="ctamini"><b>App ufficiali in italiano esistono sugli operatori europei.</b><a href="/referral-link?sub_id_1=N1">Scarica l&#x27;app</a></div>
+<h2>Casinò e giochi disponibili in versione mobile</h2>
+<p>Il casinò si apre in due schede separate: i giochi animati stanno nel &quot;Platinum&quot;, i tavoli con dealer in streaming nel live. Tra le slot la più chiacchierata è Reels and Wheels XL, con i suoi cinque jackpot (Mini, Minor, Major, Mega e Vegas). 10 Times Vegas lavora su una griglia 3×3 con wild moltiplicatori da 2x a 10x, vincite fino a 100x e re-spin. In lista anche Crystals on Fire con cinque jackpot fissi, Golden Buffalo, The Tipsy Tourist, River of Gold, Hooked On Fishing e 3 Heads of Fortune.</p>
+<p>Per gli instant ci sono Dice, volatilità alta, e Mines, dove decidi quante mine mettere sulla griglia e incassi quando vuoi con il cash out. Craps al suo posto, video poker Jacks or Better pure. Poker room invece niente, né su iOS né su Android.</p>
+<h2>Bonus e promozioni attive su BetNow mobile</h2>
+<p>Le promozioni sono identiche da telefono e da computer. Nessuna offerta riservata al mobile, e nemmeno tagli per chi gioca dal palmo della mano. Le offerte tipiche riportate dalle fonti, da verificare in pagina promozioni:</p>
+<ul><li><strong>Bonus sport</strong>: 50% sul primo deposito fino a 1.000 $, con versioni che salgono al 100%; qualche recensione cita un 125% fino a 2.500 $</li><li><strong>Bonus casinò</strong>: 100% fino a 1.500 $</li><li><strong>Reload</strong> del 25% sulle ricariche successive</li><li><strong>Rebate/cashback</strong>: 2% sullo sport, 10% sul casinò, 10% sull&#x27;ippica</li><li><strong>Bonus crypto</strong> per chi deposita in criptovaluta</li><li><strong>Refer a friend</strong>, con ricompensa in denaro reale</li></ul>
+<p>I valori ballano nel tempo, quindi la verifica te la fai in tre mosse: apri la pagina promozioni, leggi rollover e deposito minimo della singola offerta, guarda la scadenza. Il rollover cambia da promo a promo, ed è lui a decidere se un 100% sul casinò vale qualcosa o resta un numero grosso sullo schermo.</p>
+<h2>Depositi e prelievi da smartphone</h2>
+<p>In cassa entrano carte di credito, debito e prepagate (Visa e Mastercard), bonifico bancario, Bitcoin e altre criptovalute, più metodi tipicamente americani come Zelle, CashMG e i trasferimenti Person-to-Person. Per il prelievo esiste anche l&#x27;assegno spedito via corriere. PayPal, Skrill e SEPA non compaiono nell&#x27;elenco: per un giocatore italiano la strada comoda è la crypto.</p>
+<p>I depositi in Bitcoin arrivano di fatto subito. I prelievi crypto in uno o due giorni, il bonifico standard tra uno e cinque, e le somme elevate via bank wire possono prendersi fino a sette giorni. Un prelievo al mese è gratuito, dal secondo scatta una commissione che dipende dal metodo. Minimi e massimi li leggi direttamente in cassa, perché cambiano da canale a canale. Il conto resta in USD: se ricarichi con una carta in euro, la conversione la applica la tua banca al cambio che decide lei.</p>
+<h2>Assistenza clienti e sicurezza dell&#x27;app</h2>
+<p>Live chat 24/7 dentro la versione mobile, più email, sezione FAQ e un numero di telefono (1-844-823-8669) pensato per i giocatori statunitensi. Si risponde in inglese. L&#x27;italiano non è garantito, quindi o scrivi frasi semplici o tieni aperto un traduttore mentre spieghi il problema.</p>
+<p>Sul lato tecnico la connessione viaggia con crittografia SSL, standard per le transazioni. Limiti di deposito e strumenti di autoesclusione fanno parte della dotazione tipica di questi operatori e si trovano nelle impostazioni del conto.</p>
+<h2>Pro e contro dell&#x27;app BetNow: il nostro verdetto</h2>
+<p><strong>Pro:</strong></p>
+<ul><li>Niente da scaricare, memoria occupata pari a zero, aggiornamenti che arrivano dal server senza che tu muova un dito</li><li>Stessa roba del desktop: sport, live, casinò, live dealer, racebook</li><li>Live betting reattivo, quote in tempo reale, &quot;build your prop&quot;</li><li>Crypto veloce sia in entrata sia in uscita</li><li>Cashback ricorrenti indicati dalle fonti, oltre al bonus di benvenuto</li></ul>
+<p><strong>Contro:</strong></p>
+<ul><li>Conto solo in dollari, con la conversione a carico tuo</li><li>Cassa tarata sul mercato USA, senza i circuiti europei più diffusi</li><li>Supporto in inglese</li><li>Nessuna poker room</li><li>Dal secondo prelievo del mese scatta una commissione</li></ul>
+<p><strong>Verdetto: 7/10.</strong> La web app fa quasi tutto quello che farebbe un&#x27;app nativa e non ti mangia un megabyte, il che è più di quanto si possa dire di certi bookmaker che pretendono un&#x27;installazione per mostrarti una quota. Il profilo giusto è nitido: sport americano, portafoglio crypto, inglese sufficiente per aprire un ticket in chat. Se invece giochi in euro con carta italiana, il punto delicato non è l&#x27;app ma la cassa.</p>
+<h2>Domande frequenti su BetNow App</h2>
+<details><summary>Esiste un&#x27;app BetNow da scaricare su Google Play o App Store?</summary><p>No. Da mobile si gioca dentro il browser, e la &quot;BET NOW – Watch Shows&quot; che vedi su Google Play è streaming televisivo, un altro mondo.</p></details>
+<details><summary>Come aggiungo BetNow alla schermata Home?</summary><p>Su Android da Chrome: menu ⋮ e poi &quot;Aggiungi a schermata Home&quot;. Su iPhone da Safari: Condividi, &quot;Aggiungi a Home&quot;. Tocchi l&#x27;icona e la piattaforma parte.</p></details>
+<details><summary>I bonus da mobile sono diversi da quelli desktop?</summary><p>Sono gli stessi: benvenuto sport e casinò, reload, rebate e referral valgono da qualsiasi schermo, con le condizioni indicate in pagina promozioni.</p></details>
+<details><summary>Posso giocare a poker dall&#x27;app?</summary><p>No, la poker room non c&#x27;è né su iOS né su Android. Restano slot, tavoli live, Craps, video poker e gli instant tipo Dice e Mines.</p></details>
+<details><summary>Quanto ci mette un prelievo in Bitcoin?</summary><p>Uno o due giorni secondo i tempi indicati dall&#x27;operatore. Bonifici e importi elevati si allungano, fino a sette giorni.</p></details>
+<details><summary>Serve la verifica dei documenti?</summary><p>Sì. Il KYC con documento d&#x27;identità arriva prima del primo prelievo e si chiude caricando le foto dallo smartphone.</p></details>
+  </article>
+  <div class="clusterFoot"><a href="/">Home</a><a href="/scommesse/">Scommesse</a><a href="/casino/">Casino</a><a href="/bonus/">Bonus</a><a href="/accesso/">Accesso</a><a href="/app/">App</a><a href="/recensioni/">Recensioni</a></div>
+</div>
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-cols">
+      <div>
+        <h4>Gioco</h4>
+        <ul>
+          <li><a href="/scommesse/">Sportsbook</a></li>
+          <li><a href="/casino/">Casinò</a></li>
+          <li><a href="/bonus/">Promozioni</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Conto</h4>
+        <ul>
+          <li><a href="/accesso/">Login e registrazione</a></li>
+          <li><a href="/app/">App e mobile</a></li>
+          <li><a href="/recensioni/">Recensioni</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Assistenza</h4>
+        <ul>
+          <li>Tel. 1-888-WINNER4</li>
+          <li>Chat 24/7 sul sito dell'operatore</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Gioco responsabile</h4>
+        <ul>
+          <li><a href="https://www.begambleaware.org/" rel="nofollow noopener" target="_blank">BeGambleAware</a></li>
+          <li><a href="https://www.iss.it/telefono-verde-per-le-problematiche-legate-al-gioco-d-azzardo" rel="nofollow noopener" target="_blank">Telefono Verde 800 558822</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <div class="age">18+</div>
+      <p>Il gioco è vietato ai minori di 18 anni e può causare dipendenza patologica. Gioca responsabilmente.
+      BetNow è un operatore internazionale senza concessione ADM: giocare su siti non autorizzati in Italia
+      comporta rischi e tutele ridotte. Questo sito è una risorsa informativa indipendente e non è il portale
+      ufficiale dell'operatore. Quote e importi mostrati sono indicativi.</p>
+    </div>
+  </div>
+</footer>
+<div class="stky" id="stky"><img src="/assets/n1bet-logo.svg" alt="N1 Bet"><div class="t"><b>N1 Bet · conto in euro</b><span>5.000€ + 200 giri gratis · score 4.6</span></div><a href="/referral-link?sub_id_1=N1">Gioca ora →</a></div><script>(function(){var e=document.getElementById("stky");addEventListener("scroll",function(){e.classList.toggle("show",scrollY>320)},{passive:true})})();</script>
+</body>
+</html>
